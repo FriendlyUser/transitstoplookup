@@ -114,6 +114,7 @@ export default {
     };
   },
   mounted() {
+    fetch('/transitstoplookup/trips.txt')
     // Fetch stops.txt data when the component is mounted
     fetch('/transitstoplookup/stops.txt')
       .then((response) => response.text())
