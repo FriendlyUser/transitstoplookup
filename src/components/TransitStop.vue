@@ -1,5 +1,5 @@
 <template>
-  <div class="p-6 max-w-3xl mx-auto bg-white shadow-md rounded-md">
+  <div class="p-6 max-w-7xl mx-auto bg-white shadow-md rounded-md">
     <h1 class="text-3xl font-semibold mb-6 text-center">Find Nearby Bus Stops</h1>
     <form @submit.prevent="searchLocation">
       <div class="grid grid-cols-1 gap-4 mb-4">
@@ -45,26 +45,54 @@
 
     <div v-if="busStops.length" class="mt-8">
       <h2 class="text-2xl font-semibold mb-4">Nearby Bus Stops:</h2>
-      <table class="min-w-full bg-white">
-        <thead>
-          <tr>
-            <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">Stop Location</th>
-            <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">Stop ID</th>
-            <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">Walking Distance (meters)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr
-            v-for="(stop, index) in busStops"
-            :key="index"
-            class="border-b"
-          >
-            <td class="py-2 px-4">{{ stop.stop_name }}</td>
-            <td class="py-2 px-4">{{ stop.stop_id }}</td>
-            <td class="py-2 px-4">{{ (stop.distance * 1000).toFixed(1) }}</td>
-          </tr>
-        </tbody>
-      </table>
+      <!-- Copy Table Button -->
+      <button
+        @click="copyTableToClipboard"
+        class="mb-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition duration-200"
+      >
+        Copy Table to Clipboard
+      </button>
+      <!-- Table -->
+      <div class="max-h-96 overflow-y-auto">
+        <table ref="busStopsTable" class="min-w-full bg-white max-h-96">
+          <thead>
+            <tr>
+              <th
+                class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase"
+              >
+                Stop Location
+              </th>
+              <th
+                class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase"
+              >
+                Stop ID
+              </th>
+              <th
+                class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase"
+              >
+                Walking Distance (meters)
+              </th>
+              <th
+                class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase"
+              >
+                Routes Serviced
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              v-for="(stop, index) in busStops"
+              :key="index"
+              class="border-b"
+            >
+              <td class="py-2 px-4">{{ stop.stop_name }}</td>
+              <td class="py-2 px-4">{{ stop.stop_id }}</td>
+              <td class="py-2 px-4">{{ (stop.distance * 1000).toFixed(1) }}</td>
+              <td class="py-2 px-4"></td> <!-- Blank for now -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div v-if="error" class="text-red-500 mt-4">{{ error }}</div>
@@ -122,9 +150,7 @@ export default {
 
       const apiUrl = `https://nominatim.openstreetmap.org/search?city=${encodeURIComponent(
         this.city
-      )}&street=${encodeURIComponent(
-        this.street
-      )}&format=json`;
+      )}&street=${encodeURIComponent(this.street)}&format=json`;
 
       fetch(apiUrl)
         .then((response) => response.json())
@@ -173,6 +199,31 @@ export default {
         })
         .filter((stop) => stop.distance <= radiusInKm)
         .sort((a, b) => a.distance - b.distance); // Optional: sort by distance
+    },
+
+    // Copy table HTML to clipboard
+    copyTableToClipboard() {
+      const tableElement = this.$refs.busStopsTable;
+      const selection = window.getSelection();
+      const range = document.createRange();
+
+      range.selectNodeContents(tableElement);
+      selection.removeAllRanges();
+      selection.addRange(range);
+
+      try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+          alert('Table copied to clipboard!');
+        } else {
+          alert('Failed to copy table.');
+        }
+      } catch (err) {
+        console.error('Error copying table:', err);
+        alert('Error copying table.');
+      }
+
+      selection.removeAllRanges();
     },
   },
 };
