@@ -1,3 +1,5 @@
+<script setup lang="ts">
+</script>
 <template>
   <div class="p-6 max-w-7xl mx-auto bg-white shadow-md rounded-md">
     <h1 class="text-3xl font-semibold mb-6 text-center">Find Nearby Bus Stops</h1>
@@ -207,9 +209,9 @@ export default {
       const selection = window.getSelection();
       const range = document.createRange();
 
-      range.selectNodeContents(tableElement);
-      selection.removeAllRanges();
-      selection.addRange(range);
+      range.selectNodeContents(tableElement );
+      selection?.removeAllRanges();
+      selection?.addRange(range);
 
       try {
         const successful = document.execCommand('copy');
@@ -223,7 +225,7 @@ export default {
         alert('Error copying table.');
       }
 
-      selection.removeAllRanges();
+      selection?.removeAllRanges();
     },
   },
 };
