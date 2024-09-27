@@ -115,7 +115,7 @@ export default {
   },
   mounted() {
     // Fetch stops.txt data when the component is mounted
-    fetch('/stops.txt')
+    fetch('/transitstoplookup/stops.txt')
       .then((response) => response.text())
       .then((data) => {
         this.parseStopsData(data);
