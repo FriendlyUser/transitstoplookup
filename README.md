@@ -32,5 +32,4 @@ npm run dev
 npm run build
 ```
 
-
-https://nominatim.openstreetmap.org/search?city=Vancouver&street=500%Dog%20Street&format=json
+This reoo is deployed to github pages
