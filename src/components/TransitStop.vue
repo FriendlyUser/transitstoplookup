@@ -18,9 +18,11 @@ export default {
       calendarData: null,
       calendarDatesData: null,
       serviceIdToDays: {}, // Maps service_id to service days
+      isLoading: true,
     };
   },
   mounted() {
+    this.isLoading = true;
     Promise.all([
       fetch('/transitstoplookup/stops.txt').then((response) => response.text()),
       fetch('/transitstoplookup/stop_times.txt').then((response) => response.text()),
@@ -36,10 +38,12 @@ export default {
         this.parseStopTimesData(stopTimesData);
         this.parseTripsData(tripsData);
         this.parseRoutesData(routesData);
+        this.isLoading = false; // Data loaded
       })
       .catch((error) => {
         this.error = 'Error loading GTFS data';
         console.error(error);
+        this.isLoading = false; // Stop loading even if there is an error
       });
   },
   methods: {
@@ -444,48 +448,75 @@ export default {
 <template>
   <div class="p-6 max-w-7xl mx-auto bg-white shadow-md rounded-md">
     <!-- ... existing form and bus stops table ... -->
-    <h1 class="text-3xl font-semibold mb-6 text-center">Find Nearby Bus Stops</h1>
-    <form @submit.prevent="searchLocation">
-      <div class="grid grid-cols-1 gap-4 mb-4">
-        <div>
-          <label for="city" class="block text-gray-700 font-medium mb-2">City</label>
-          <input
-            v-model="city"
-            id="city"
-            type="text"
-            class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter city"
-          />
-        </div>
-        <div>
-          <label for="street" class="block text-gray-700 font-medium mb-2">Street</label>
-          <input
-            v-model="street"
-            id="street"
-            type="text"
-            class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter street"
-          />
-        </div>
-        <div>
-          <label for="radius" class="block text-gray-700 font-medium mb-2">Radius (meters)</label>
-          <input
-            v-model.number="radius"
-            id="radius"
-            type="number"
-            class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter radius in meters"
-            min="100"
-          />
-        </div>
-      </div>
-      <button
-        type="submit"
-        class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition duration-200"
+    <div v-if="isLoading" class="flex flex-col items-center justify-center h-screen">
+      <svg
+        class="animate-spin h-10 w-10 text-blue-600 mb-4"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
       >
-        Find Bus Stops
-      </button>
-    </form>
+        <circle
+          class="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          stroke-width="4"
+        ></circle>
+        <path
+          class="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8v8H4z"
+        ></path>
+      </svg>
+      <p class="text-lg text-gray-700">Loading transit data, please wait...</p>
+    </div>
+
+    <!-- Form and Content -->
+    <div v-else>
+      <h1 class="text-3xl font-semibold mb-6 text-center">Find Nearby Bus Stops</h1>
+      <form @submit.prevent="searchLocation">
+        <div class="grid grid-cols-1 gap-4 mb-4">
+          <div>
+            <label for="city" class="block text-gray-700 font-medium mb-2">City</label>
+            <input
+              v-model="city"
+              id="city"
+              type="text"
+              class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Enter city"
+            />
+          </div>
+          <div>
+            <label for="street" class="block text-gray-700 font-medium mb-2">Street</label>
+            <input
+              v-model="street"
+              id="street"
+              type="text"
+              class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Enter street"
+            />
+          </div>
+          <div>
+            <label for="radius" class="block text-gray-700 font-medium mb-2">Radius (meters)</label>
+            <input
+              v-model.number="radius"
+              id="radius"
+              type="number"
+              class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Enter radius in meters"
+              min="100"
+            />
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition duration-200"
+        >
+          Find Bus Stops
+        </button>
+      </form>
+    </div>
 
     <div v-if="busStops.length" class="mt-8">
       <h2 class="text-2xl font-semibold mb-4">Nearby Bus Stops:</h2>
