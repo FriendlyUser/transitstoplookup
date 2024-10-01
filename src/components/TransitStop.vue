@@ -15,6 +15,9 @@ export default {
       tripsByTripId: {},
       routesByRouteId: {},
       routeFrequencyTableData: [],
+      calendarData: null,
+      calendarDatesData: null,
+      serviceIdToDays: {}, // Maps service_id to service days
     };
   },
   mounted() {
@@ -23,8 +26,12 @@ export default {
       fetch('/transitstoplookup/stop_times.txt').then((response) => response.text()),
       fetch('/transitstoplookup/trips.txt').then((response) => response.text()),
       fetch('/transitstoplookup/routes.txt').then((response) => response.text()),
+      fetch('/transitstoplookup/calendar.txt').then((response) => response.text()),
+      fetch('/transitstoplookup/calendar_dates.txt').then((response) => response.text()),
     ])
-      .then(([stopsData, stopTimesData, tripsData, routesData]) => {
+    .then(([stopsData, stopTimesData, tripsData, routesData, calendarData, calendarDatesData]) => {
+        this.parseCalendarData(calendarData);
+        this.parseCalendarDatesData(calendarDatesData);
         this.parseStopsData(stopsData);
         this.parseStopTimesData(stopTimesData);
         this.parseTripsData(tripsData);
@@ -86,9 +93,13 @@ export default {
         return trip;
       });
 
-      // Build index by trip_id
+      // Build index by trip_id and include service days
       this.tripsData.forEach((trip) => {
-        this.tripsByTripId[trip.trip_id] = trip;
+        const serviceDays = this.serviceIdToDays[trip.service_id];
+        this.tripsByTripId[trip.trip_id] = {
+          ...trip,
+          serviceDays,
+        };
       });
     },
 
@@ -108,6 +119,60 @@ export default {
       // Build index by route_id
       this.routesData.forEach((route) => {
         this.routesByRouteId[route.route_id] = route;
+      });
+    },
+
+    parseCalendarData(data) {
+      const lines = data.trim().split('\n');
+      const keys = lines[0].split(','); // Extract header row
+      this.calendarData = lines.slice(1).map((line) => {
+        const values = line.split(',');
+        const calendarEntry = {};
+        keys.forEach((key, index) => {
+          calendarEntry[key] = values[index];
+        });
+        return calendarEntry;
+      });
+
+      // Map service_id to service days
+      this.calendarData.forEach((entry) => {
+        const service_id = entry.service_id;
+        const days = {
+          monday: entry.monday === '1',
+          tuesday: entry.tuesday === '1',
+          wednesday: entry.wednesday === '1',
+          thursday: entry.thursday === '1',
+          friday: entry.friday === '1',
+          saturday: entry.saturday === '1',
+          sunday: entry.sunday === '1',
+          start_date: entry.start_date,
+          end_date: entry.end_date,
+        };
+        this.serviceIdToDays[service_id] = days;
+      });
+    },
+
+    // Parse calendar_dates.txt data
+    parseCalendarDatesData(data) {
+      const lines = data.trim().split('\n');
+      const keys = lines[0].split(','); // Extract header row
+      this.calendarDatesData = lines.slice(1).map((line) => {
+        const values = line.split(',');
+        const calendarDateEntry = {};
+        keys.forEach((key, index) => {
+          calendarDateEntry[key] = values[index];
+        });
+        return calendarDateEntry;
+      });
+
+      // Apply exceptions to service days
+      this.calendarDatesData.forEach((entry) => {
+        const service_id = entry.service_id;
+        const date = entry.date;
+        const exception_type = entry.exception_type; // 1=Added service, 2=Removed service
+
+        // For simplicity, we'll ignore specific dates in this example
+        // You can implement date checks here if needed
       });
     },
 
@@ -178,112 +243,156 @@ export default {
       this.computeRouteFrequencies();
     },
 
-    // Compute route frequencies per stop
+    // Compute route frequencies per route at each stop
     computeRouteFrequencies() {
       this.routeFrequencyTableData = []; // Clear previous data
-
+      const timePeriods = [
+        { name: 'AM Peak', start: 360, end: 540, days: ['weekday'] }, // 6:00 to 9:00
+        { name: 'Mid-day', start: 540, end: 900, days: ['weekday'] }, // 9:00 to 15:00
+        { name: 'PM Peak', start: 900, end: 1140, days: ['weekday'] }, // 15:00 to 19:00
+        { name: 'Evening', start: 1140, end: 1440, days: ['weekday'] }, // 19:00 to 24:00
+        { name: 'Weekend', start: 0, end: 1440, days: ['weekend'] }, // All day
+      ];
       // For each nearby stop
       this.busStops.forEach((stop) => {
         const stop_id = stop.stop_id;
         const stop_name = stop.stop_name;
         const stop_times = this.stopTimesByStopId[stop_id] || [];
 
-        // Build a data structure per route serving this stop
-        const routesAtStop = {};
+        // Group stop_times by route_id
+        const routeTimes = {};
 
-        // For each stop_time entry at this stop
         stop_times.forEach((stop_time) => {
           const trip_id = stop_time.trip_id;
           const arrival_time = stop_time.arrival_time;
-          const trip = this.tripsByTripId[trip_id];
-          if (trip) {
-            const route_id = trip.route_id;
-            if (!routesAtStop[route_id]) {
-              routesAtStop[route_id] = {
+          const tripData = this.tripsByTripId[trip_id];
+          if (tripData) {
+            const route_id = tripData.route_id;
+            const serviceDays = tripData.serviceDays;
+
+            if (!routeTimes[route_id]) {
+              routeTimes[route_id] = {
                 route: this.routesByRouteId[route_id],
                 arrival_times: [],
+                serviceDays: {},
               };
             }
-            routesAtStop[route_id].arrival_times.push(arrival_time);
+            routeTimes[route_id].arrival_times.push({
+              time: arrival_time,
+              serviceDays: serviceDays,
+            });
           }
         });
 
-        // For each route serving this stop, compute frequency data
-        Object.keys(routesAtStop).forEach((route_id) => {
-          const routeData = routesAtStop[route_id];
+        // For each route at this stop, compute headway and service span
+        Object.keys(routeTimes).forEach((route_id) => {
+          const routeData = routeTimes[route_id];
 
-          // Convert arrival times to minutes and sort
-          const timesInMinutes = routeData.arrival_times
-            .map(this.timeToMinutes)
-            .sort((a, b) => a - b);
-          routeData.timesInMinutes = timesInMinutes;
+          // Convert arrival times to minutes since midnight and sort them
+          const timesInMinutes = routeData.arrival_times.map((entry) => ({
+            timeInMinutes: this.timeToMinutes(entry.time),
+            serviceDays: entry.serviceDays,
+          }));
 
-          // Compute service span
-          const serviceStart = timesInMinutes[0];
-          const serviceEnd = timesInMinutes[timesInMinutes.length - 1];
-          routeData.serviceSpan = {
-            start: serviceStart,
-            end: serviceEnd,
-          };
+          // Compute service span and headways for each time period
+          const periodHeadways = {};
 
-          // Define time periods
-          const timePeriods = [
-            { name: 'AM Peak', start: 360, end: 540 }, // 6:00 to 9:00
-            { name: 'Mid-day', start: 540, end: 900 }, // 9:00 to 15:00
-            { name: 'PM Peak', start: 900, end: 1140 }, // 15:00 to 19:00
-            { name: 'Evening', start: 1140, end: 1440 }, // 19:00 to 24:00
-          ];
-
-          routeData.timePeriodTimes = {};
-
-          // Compute headways for each time period
           timePeriods.forEach((period) => {
-            const times = timesInMinutes.filter(
-              (t) => t >= period.start && t < period.end
-            );
-            routeData.timePeriodTimes[period.name] = times;
-            if (times.length >= 2) {
-              const intervals = [];
-              for (let i = 1; i < times.length; i++) {
-                intervals.push(times[i] - times[i - 1]);
+            const periodTimes = timesInMinutes.filter((entry) => {
+              const time = entry.timeInMinutes;
+              const isInPeriod = time >= period.start && time < period.end;
+              const runsOnPeriodDay = period.days.includes(
+                this.getDayType(entry.serviceDays)
+              );
+              return isInPeriod && runsOnPeriodDay;
+            });
+
+            const sortedTimes = periodTimes
+              .map((entry) => entry.timeInMinutes)
+              .sort((a, b) => a - b);
+
+            // Compute intervals between consecutive arrivals
+            const intervals = [];
+            for (let i = 1; i < sortedTimes.length; i++) {
+              const interval = sortedTimes[i] - sortedTimes[i - 1];
+              // Ignore intervals longer than 120 minutes to filter out gaps
+              if (interval <= 120) {
+                intervals.push(interval);
               }
-              const avgInterval =
-                intervals.reduce((a, b) => a + b, 0) / intervals.length;
-              routeData[`${period.name} Headway`] = avgInterval;
-            } else {
-              routeData[`${period.name} Headway`] = null; // Not enough data
             }
+
+            // Compute average headway
+            let avgHeadway = 'N/A';
+            if (intervals.length > 0) {
+              const totalInterval = intervals.reduce((a, b) => a + b, 0);
+              avgHeadway = (totalInterval / intervals.length).toFixed(1);
+            }
+
+            periodHeadways[period.name] = avgHeadway;
           });
 
-          // For weekend headway, display 'N/A' due to data limitations
-          const weekendHeadway = 'N/A';
+          // Compute service span start and end times for weekdays
+          const weekdayTimes = timesInMinutes.filter((entry) =>
+            this.isWeekday(entry.serviceDays)
+          ).map((entry) => entry.timeInMinutes);
 
-          // Build the table entry
+          const serviceStart =
+            weekdayTimes.length > 0
+              ? this.minutesToTime(Math.min(...weekdayTimes))
+              : 'N/A';
+          const serviceEnd =
+            weekdayTimes.length > 0
+              ? this.minutesToTime(Math.max(...weekdayTimes))
+              : 'N/A';
+
+          // Prepare table entry
           const tableEntry = {
             route: routeData.route.route_short_name || 'N/A',
             direction: routeData.route.route_long_name || 'N/A',
             stop: stop_name,
-            weekdayServiceStart: this.minutesToTime(routeData.serviceSpan.start),
-            weekdayServiceEnd: this.minutesToTime(routeData.serviceSpan.end),
-            amHeadway: routeData['AM Peak Headway']
-              ? routeData['AM Peak Headway'].toFixed(1)
-              : 'N/A',
-            midDayHeadway: routeData['Mid-day Headway']
-              ? routeData['Mid-day Headway'].toFixed(1)
-              : 'N/A',
-            pmHeadway: routeData['PM Peak Headway']
-              ? routeData['PM Peak Headway'].toFixed(1)
-              : 'N/A',
-            eveningHeadway: routeData['Evening Headway']
-              ? routeData['Evening Headway'].toFixed(1)
-              : 'N/A',
-            weekendHeadway: weekendHeadway,
+            weekdayServiceStart: serviceStart,
+            weekdayServiceEnd: serviceEnd,
+            amHeadway: periodHeadways['AM Peak'],
+            midDayHeadway: periodHeadways['Mid-day'],
+            pmHeadway: periodHeadways['PM Peak'],
+            eveningHeadway: periodHeadways['Evening'],
+            weekendHeadway: periodHeadways['Weekend'],
           };
 
           this.routeFrequencyTableData.push(tableEntry);
         });
       });
     },
+
+  // Helper function to determine if the service runs on weekdays
+  isWeekday(serviceDays) {
+    return (
+      serviceDays.monday ||
+      serviceDays.tuesday ||
+      serviceDays.wednesday ||
+      serviceDays.thursday ||
+      serviceDays.friday
+    );
+  },
+
+  // Helper function to determine the day type
+  getDayType(serviceDays) {
+    if (
+      serviceDays.saturday ||
+      serviceDays.sunday
+    ) {
+      return 'weekend';
+    } else if (
+      serviceDays.monday ||
+      serviceDays.tuesday ||
+      serviceDays.wednesday ||
+      serviceDays.thursday ||
+      serviceDays.friday
+    ) {
+      return 'weekday';
+    }
+    return 'unknown';
+  },
 
     // Convert HH:MM:SS to minutes since midnight
     timeToMinutes(timeStr) {
@@ -329,6 +438,7 @@ export default {
     },
   },
 };
+
 </script>
 
 <template>
@@ -429,85 +539,42 @@ export default {
       </div>
     </div>
     <!-- Route Frequencies Table -->
-    <div v-if="routeFrequencyTableData.length" class="mt-8">
-      <h2 class="text-2xl font-semibold mb-4">Route Frequencies:</h2>
-      <div class="max-h-96 overflow-y-auto">
-        <table class="min-w-full bg-white max-h-96">
-          <thead>
-            <tr>
-              <th
-                class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase"
-              >
-                Route
-              </th>
-              <th
-                class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase"
-              >
-                Direction
-              </th>
-              <th
-                class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase"
-              >
-                Stop
-              </th>
-              <th
-                class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase"
-              >
-                Weekday Service Span Start
-              </th>
-              <th
-                class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase"
-              >
-                Weekday Service Span End
-              </th>
-              <th
-                class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase"
-              >
-                AM Headway (min)
-              </th>
-              <th
-                class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase"
-              >
-                Mid-day Headway (min)
-              </th>
-              <th
-                class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase"
-              >
-                PM Headway (min)
-              </th>
-              <th
-                class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase"
-              >
-                Evening Headway (min)
-              </th>
-              <th
-                class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase"
-              >
-                Weekend Headway (min)
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr
-              v-for="(entry, index) in routeFrequencyTableData"
-              :key="index"
-              class="border-b"
-            >
-              <td class="py-2 px-4">{{ entry.route }}</td>
-              <td class="py-2 px-4">{{ entry.direction }}</td>
-              <td class="py-2 px-4">{{ entry.stop }}</td>
-              <td class="py-2 px-4">{{ entry.weekdayServiceStart }}</td>
-              <td class="py-2 px-4">{{ entry.weekdayServiceEnd }}</td>
-              <td class="py-2 px-4">{{ entry.amHeadway }}</td>
-              <td class="py-2 px-4">{{ entry.midDayHeadway }}</td>
-              <td class="py-2 px-4">{{ entry.pmHeadway }}</td>
-              <td class="py-2 px-4">{{ entry.eveningHeadway }}</td>
-              <td class="py-2 px-4">{{ entry.weekendHeadway }}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <!-- Route Frequencies Table -->
+<div v-if="routeFrequencyTableData.length" class="mt-8">
+  <h2 class="text-2xl font-semibold mb-4">Route Frequencies:</h2>
+  <div class="max-h-96 overflow-y-auto">
+    <table class="min-w-full bg-white max-h-96">
+      <thead>
+        <tr>
+          <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">Route</th>
+          <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">Direction</th>
+          <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">Stop</th>
+          <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">Weekday Service Span Start</th>
+          <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">Weekday Service Span End</th>
+          <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">AM Headway (min)</th>
+          <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">Mid-day Headway (min)</th>
+          <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">PM Headway (min)</th>
+          <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">Evening Headway (min)</th>
+          <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">Weekend Headway (min)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(entry, index) in routeFrequencyTableData" :key="index" class="border-b">
+          <td class="py-2 px-4">{{ entry.route }}</td>
+          <td class="py-2 px-4">{{ entry.direction }}</td>
+          <td class="py-2 px-4">{{ entry.stop }}</td>
+          <td class="py-2 px-4">{{ entry.weekdayServiceStart }}</td>
+          <td class="py-2 px-4">{{ entry.weekdayServiceEnd }}</td>
+          <td class="py-2 px-4">{{ entry.amHeadway }}</td>
+          <td class="py-2 px-4">{{ entry.midDayHeadway }}</td>
+          <td class="py-2 px-4">{{ entry.pmHeadway }}</td>
+          <td class="py-2 px-4">{{ entry.eveningHeadway }}</td>
+          <td class="py-2 px-4">{{ entry.weekendHeadway }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
     <div v-if="error" class="text-red-500 mt-4">{{ error }}</div>
   </div>
