@@ -97,6 +97,62 @@
       </div>
     </div>
 
+    <div v-if="routeFrequencyTableData.length" class="mt-8">
+      <h2 class="text-2xl font-semibold mb-4">Route Frequencies:</h2>
+      <div class="max-h-96 overflow-y-auto">
+        <table class="min-w-full bg-white max-h-96">
+          <thead>
+            <tr>
+              <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">
+                Route
+              </th>
+              <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">
+                Direction
+              </th>
+              <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">
+                Stops
+              </th>
+              <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">
+                Service Start
+              </th>
+              <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">
+                Service End
+              </th>
+              <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">
+                AM Headway (min)
+              </th>
+              <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">
+                Mid-day Headway (min)
+              </th>
+              <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">
+                PM Headway (min)
+              </th>
+              <th class="py-2 px-4 bg-gray-200 text-left text-sm font-medium text-gray-700 uppercase">
+                Evening Headway (min)
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              v-for="(entry, index) in routeFrequencyTableData"
+              :key="index"
+              class="border-b"
+            >
+              <td class="py-2 px-4">{{ entry.route }}</td>
+              <td class="py-2 px-4">{{ entry.direction }}</td>
+              <td class="py-2 px-4">{{ entry.stops }}</td>
+              <td class="py-2 px-4">{{ entry.serviceStart }}</td>
+              <td class="py-2 px-4">{{ entry.serviceEnd }}</td>
+              <td class="py-2 px-4">{{ entry.amHeadway }}</td>
+              <td class="py-2 px-4">{{ entry.midDayHeadway }}</td>
+              <td class="py-2 px-4">{{ entry.pmHeadway }}</td>
+              <td class="py-2 px-4">{{ entry.eveningHeadway }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
     <div v-if="error" class="text-red-500 mt-4">{{ error }}</div>
   </div>
 </template>
@@ -110,22 +166,37 @@ export default {
       radius: 800, // Default radius in meters
       busStops: [],
       error: null,
-      stopsData: null, // This will hold the parsed stop data
+      stopsData: null,
+      stopTimesData: null,
+      tripsData: null,
+      routesData: null,
+      stopTimesByStopId: {},
+      tripsByTripId: {},
+      routesByRouteId: {},
+      routeFrequencies: {},
+      routeFrequencyTableData: [],
     };
   },
+
   mounted() {
-    fetch('/transitstoplookup/trips.txt')
-    // Fetch stops.txt data when the component is mounted
-    fetch('/transitstoplookup/stops.txt')
-      .then((response) => response.text())
-      .then((data) => {
-        this.parseStopsData(data);
-      })
-      .catch((error) => {
-        this.error = 'Error loading bus stop data';
-        console.error(error);
-      });
-  },
+  Promise.all([
+    fetch('/transitstoplookup/stops.txt').then((response) => response.text()),
+    fetch('/transitstoplookup/stop_times.txt').then((response) => response.text()),
+    fetch('/transitstoplookup/trips.txt').then((response) => response.text()),
+    fetch('/transitstoplookup/routes.txt').then((response) => response.text()),
+  ])
+    .then(([stopsData, stopTimesData, tripsData, routesData]) => {
+      this.parseStopsData(stopsData);
+      this.parseStopTimesData(stopTimesData);
+      this.parseTripsData(tripsData);
+      this.parseRoutesData(routesData);
+    })
+    .catch((error) => {
+      this.error = 'Error loading GTFS data';
+      console.error(error);
+    });
+},
+
   methods: {
     // Parse stops.txt data
     parseStopsData(data) {
@@ -140,6 +211,185 @@ export default {
         return stop;
       });
     },
+    
+    parseStopTimesData(data) {
+      const lines = data.trim().split('\n');
+      const keys = lines[0].split(','); // Extract header row
+      this.stopTimesData = lines.slice(1).map((line) => {
+        const values = line.split(',');
+        const stopTime = {};
+        keys.forEach((key, index) => {
+          stopTime[key] = values[index];
+        });
+        return stopTime;
+      });
+
+      // Build index by stop_id
+      this.stopTimesData.forEach((stopTime) => {
+        const stop_id = stopTime.stop_id;
+        if (!this.stopTimesByStopId[stop_id]) {
+          this.stopTimesByStopId[stop_id] = [];
+        }
+        this.stopTimesByStopId[stop_id].push(stopTime);
+      });
+    },
+
+    // Parse trips.txt data
+    parseTripsData(data) {
+      const lines = data.trim().split('\n');
+      const keys = lines[0].split(','); // Extract header row
+      this.tripsData = lines.slice(1).map((line) => {
+        const values = line.split(',');
+        const trip = {};
+        keys.forEach((key, index) => {
+          trip[key] = values[index];
+        });
+        return trip;
+      });
+
+      // Build index by trip_id
+      this.tripsData.forEach((trip) => {
+        this.tripsByTripId[trip.trip_id] = trip;
+      });
+    },
+
+    // Parse routes.txt data
+    parseRoutesData(data) {
+      const lines = data.trim().split('\n');
+      const keys = lines[0].split(','); // Extract header row
+      this.routesData = lines.slice(1).map((line) => {
+        const values = line.split(',');
+        const route = {};
+        keys.forEach((key, index) => {
+          route[key] = values[index];
+        });
+        return route;
+      });
+
+      // Build index by route_id
+      this.routesData.forEach((route) => {
+        this.routesByRouteId[route.route_id] = route;
+      });
+    },
+
+    computeRouteFrequencies() {
+      this.routeFrequencies = {};
+
+      // For each nearby stop
+      this.busStops.forEach((stop) => {
+        const stop_id = stop.stop_id;
+        const stop_times = this.stopTimesByStopId[stop_id] || [];
+
+        // For each stop_time entry
+        stop_times.forEach((stop_time) => {
+          const trip_id = stop_time.trip_id;
+          const arrival_time = stop_time.arrival_time;
+          const trip = this.tripsByTripId[trip_id];
+          if (trip) {
+            const route_id = trip.route_id;
+            if (!this.routeFrequencies[route_id]) {
+              this.routeFrequencies[route_id] = {
+                route: this.routesByRouteId[route_id],
+                stop_ids: new Set(),
+                arrival_times: [],
+              };
+            }
+            this.routeFrequencies[route_id].stop_ids.add(stop_id);
+            this.routeFrequencies[route_id].arrival_times.push(arrival_time);
+          }
+        });
+      });
+
+      // Process frequencies for each route
+      this.routeFrequencyTableData = [];
+      Object.keys(this.routeFrequencies).forEach((route_id) => {
+        const routeFreq = this.routeFrequencies[route_id];
+
+        // Convert arrival times to minutes and sort
+        const timesInMinutes = routeFreq.arrival_times
+          .map(this.timeToMinutes)
+          .sort((a, b) => a - b);
+        routeFreq.timesInMinutes = timesInMinutes;
+
+        // Compute service span
+        const serviceStart = timesInMinutes[0];
+        const serviceEnd = timesInMinutes[timesInMinutes.length - 1];
+        routeFreq.serviceSpan = {
+          start: serviceStart,
+          end: serviceEnd,
+        };
+
+        // Define time periods
+        const timePeriods = [
+          { name: 'AM Peak', start: 360, end: 540 }, // 6:00 to 9:00
+          { name: 'Mid-day', start: 540, end: 900 }, // 9:00 to 15:00
+          { name: 'PM Peak', start: 900, end: 1140 }, // 15:00 to 19:00
+          { name: 'Evening', start: 1140, end: 1440 }, // 19:00 to 24:00
+        ];
+
+        routeFreq.timePeriodTimes = {};
+
+        // Compute headways for each time period
+        timePeriods.forEach((period) => {
+          const times = timesInMinutes.filter(
+            (t) => t >= period.start && t < period.end
+          );
+          routeFreq.timePeriodTimes[period.name] = times;
+          if (times.length >= 2) {
+            const intervals = [];
+            for (let i = 1; i < times.length; i++) {
+              intervals.push(times[i] - times[i - 1]);
+            }
+            const avgInterval = intervals.reduce((a, b) => a + b, 0) / intervals.length;
+            routeFreq[`${period.name} Headway`] = avgInterval;
+          } else {
+            routeFreq[`${period.name} Headway`] = null; // Not enough data
+          }
+        });
+
+        // Prepare data for the table
+        const tableEntry = {
+          route: routeFreq.route.route_short_name || 'N/A',
+          direction: routeFreq.route.route_long_name || 'N/A',
+          stops: Array.from(routeFreq.stop_ids).join(', '),
+          serviceStart: this.minutesToTime(routeFreq.serviceSpan.start),
+          serviceEnd: this.minutesToTime(routeFreq.serviceSpan.end),
+          amHeadway: routeFreq['AM Peak Headway']
+            ? routeFreq['AM Peak Headway'].toFixed(1)
+            : 'N/A',
+          midDayHeadway: routeFreq['Mid-day Headway']
+            ? routeFreq['Mid-day Headway'].toFixed(1)
+            : 'N/A',
+          pmHeadway: routeFreq['PM Peak Headway']
+            ? routeFreq['PM Peak Headway'].toFixed(1)
+            : 'N/A',
+          eveningHeadway: routeFreq['Evening Headway']
+            ? routeFreq['Evening Headway'].toFixed(1)
+            : 'N/A',
+        };
+
+        this.routeFrequencyTableData.push(tableEntry);
+      });
+    },
+
+
+    timeToMinutes(timeStr) {
+      const [hoursStr, minutesStr, secondsStr] = timeStr.split(':');
+      const hours = parseInt(hoursStr, 10);
+      const minutes = parseInt(minutesStr, 10);
+      const seconds = parseInt(secondsStr, 10);
+      return hours * 60 + minutes + seconds / 60;
+    },
+
+    // Convert minutes since midnight to HH:MM format
+    minutesToTime(minutes) {
+      const hrs = Math.floor(minutes / 60);
+      const mins = Math.floor(minutes % 60);
+      return `${hrs.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}`;
+    },
+
+
+
 
     // Perform search based on city and street
     searchLocation() {
@@ -202,6 +452,9 @@ export default {
         })
         .filter((stop) => stop.distance <= radiusInKm)
         .sort((a, b) => a.distance - b.distance); // Optional: sort by distance
+
+        this.computeRouteFrequencies();
+
     },
 
     // Copy table HTML to clipboard
