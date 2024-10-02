@@ -1,0 +1,44 @@
+name: Update GTFS Data
+
+on:
+  workflow_dispatch: # Allows manual trigger of the workflow
+  schedule:
+    - cron: '0 0 * * FRI' # Runs every Friday at midnight (UTC)
+  push:
+    branches:
+      - main  # Change this to your default branch if it's not `main`
+
+jobs:
+  update-gtfs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Run extract script
+        run: |
+          chmod +x src/extract.sh
+          ./src/extract.sh
+        id: extract
+
+      - name: Check for changes
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit."
+            exit 0
+          else
+            echo "Changes detected."
+          fi
+
+      - name: Commit and Push changes
+        run: |
+          git add .
+          git commit -m "Update GTFS files"
+          git push
+        if: success() && steps.extract.outcome == 'success'
