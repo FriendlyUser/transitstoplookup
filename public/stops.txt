@@ -237,7 +237,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 10385,59258,Southbound Arthur Dr @ 3800 Block,,49.07374,-123.078933,BUS ZN,,0,,1
 10387,59661,Westbound Barnet Rd @ Cariboo Rd,,49.287913,-122.915262,BUS ZN,,0,,2
 10388,59662,Eastbound Barnet Rd @ Cariboo Rd,,49.287702,-122.914775,BUS ZN,,0,,2
-1039,51030,Northbound Arbutus St @ W King Edward Ave,,49.251937,-123.152909,BUS ZN,,0,,1
 10390,52704,Southbound Roseberry Ave @ Keith St,,49.206391,-123.015277,BUS ZN,,0,,2
 10399,59832,Southbound Howe St @ Dunsmuir St,,49.284576,-123.117067,BUS ZN,,0,,1
 104,50104,Westbound Cornwall Ave @ Yew St,,49.272645,-123.155439,BUS ZN,,0,,1
@@ -1552,10 +1551,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 12240,59569,Inlet Centre Station @ Bay 3,,49.277099,-122.826771,BUS ZN,,0,,1
 12241,53267,Inlet Centre Station @ Bay 1,,49.277967,-122.827449,BUS ZN,,0,,1
 12242,61988,Inlet Centre Station @ Bay 2,,49.278102,-122.827095,BUS ZN,,0,,1
-12243,59570,Westbound Foster Ave @ Fairview St,,49.256781,-122.88358,BUS ZN,,0,,1
-12244,58189,Westbound Foster Ave @ Aspen St,,49.256811,-122.887308,BUS ZN,,0,,1
-12245,58186,Eastbound Foster Ave @ Aspen St,,49.256704,-122.886632,BUS ZN,,0,,2
-12246,59585,Eastbound Foster Ave @ Fairview St,,49.25667,-122.883377,BUS ZN,,0,,1
 12248,60039,Eastbound Sherling Ave @ Hawkins St,,49.253526,-122.737917,BUS ZN,,0,,1
 12249,60037,Northbound Fremont Connector @ Sherling Ave,,49.253669,-122.733641,BUS ZN,,0,,1
 1225,51216,Northbound Victoria Diversion @ Victoria Dr,,49.253274,-123.066572,BUS ZN,,0,,1
@@ -1611,7 +1606,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 12308,60031,Eastbound Dominion Ave @ Fremont St,,49.258318,-122.734582,BUS ZN,,0,,1
 12309,60030,Westbound Dominion Ave @ 500 Block,,49.258456,-122.73438,BUS ZN,,0,,1
 1231,58327,Commercial-Broadway Station @ Bay 3,,49.262699,-123.069636,BUS ZN,,0,,1
-12311,53276,Eastbound Foster Ave @ Whiting Way,,49.256747,-122.891445,BUS ZN,,0,,1
 12312,58924,Northbound Garden City Rd @ Alderbridge Way,,49.177778,-123.124306,BUS ZN,,0,,1
 12313,60098,Eastbound Blue Heron Way @ Swan Rd,,49.03764,-123.095431,BUS ZN,,0,,1
 12314,59875,Eastbound Hwy 10 @ 168 St,,49.104145,-122.755775,BUS ZN,,0,,1
@@ -2006,7 +2000,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 12856,60599,Eastbound Bedwell Bay Rd @ Crystal Creek Dr (Flag),,49.314292,-122.877943,BUS ZN,,0,,2
 12858,60464,Westbound Burley Dr @ Kings Ave,,49.336337,-123.140729,BUS ZN,,0,,2
 12859,60602,Southbound Richards St @ W Pender St,,49.28292,-123.113767,BUS ZN,,0,,1
-1286,51275,Eastbound Terminal Ave @ Western St,,49.272477,-123.098889,BUS ZN,,0,,2
 12860,60604,Eastbound E Hastings St @ Dunlevy Ave,,49.281161,-123.094737,BUS ZN,,0,,1
 12862,52724,Eastbound Henning Dr @ Gilmore Ave,,49.264235,-123.016066,BUS ZN,,0,,1
 12864,52730,Northbound Gilmore Ave @ Dawson St,,49.263583,-123.014185,BUS ZN,,0,,1
@@ -2141,6 +2134,8 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 13031,60660,Westbound W King Edward Ave @ Quesnel Dr,,49.250158,-123.172648,BUS ZN,,0,,1
 13032,61991,Southbound Oak St @ W 70 Ave,,49.207837,-123.130427,BUS ZN,,0,,2
 13033,61992,Southbound Oak St @ W 67 Ave,,49.211806,-123.130288,BUS ZN,,0,,2
+13034,61994,Westbound Smith @ Fairview,,49.260258,-122.883136,BUS ZN,,0,,2
+13035,61993,Eastbound Smith @ Fairview,,49.260142,-122.882556,BUS ZN,,0,,2
 1304,60709,Southbound Knight St @ E 17 Ave,,49.255003,-123.076054,BUS ZN,,0,,2
 1307,51296,Southbound Knight St @ E 23 Ave,,49.249651,-123.076243,BUS ZN,,0,,1
 1308,51297,Southbound Knight St @ E King Edward Ave,,49.248155,-123.076298,BUS ZN,,0,,1
@@ -3224,7 +3219,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 2683,52658,Eastbound Clinton St @ Curragh Ave,,49.212889,-122.974425,BUS ZN,,0,,1
 2684,52659,Southbound Gilley Ave @ Portland St,,49.211757,-122.971972,BUS ZN,,0,,2
 2685,52660,Southbound Gilley Ave @ Ewart St,,49.209909,-122.972637,BUS ZN,,0,,2
-2686,52661,Southbound Gilley Ave @ Carson St,,49.209017,-122.973063,BUS ZN,,0,,2
+2686,52661,Southbound Gilley Ave @ Carson St,,49.209017,-122.973063,BUS ZN,,0,,1
 2687,52662,Southbound Gilley Ave @ Keith St,,49.207307,-122.974399,BUS ZN,,0,,2
 2688,52663,Northbound Gilley Ave @ Clinton St,,49.213286,-122.971866,BUS ZN,,0,,1
 2689,52664,Eastbound Rumble St @ Gilley Ave,,49.214658,-122.971351,BUS ZN,,0,,2
@@ -3960,7 +3955,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 3597,53558,Southbound Mundy St @ Monterey Ave,,49.241224,-122.834281,BUS ZN,,0,,1
 3598,53559,Southbound Mundy St @ Leclair Dr,,49.238821,-122.834253,BUS ZN,,0,,1
 3599,53560,Southbound Mundy St @ Dawes Hill Rd,,49.2355,-122.834185,BUS ZN,,0,,1
-36,50036,Eastbound W Cordova St @ Homer St,,49.283754,-123.109642,BUS ZN,,0,,1
+36,50036,Eastbound W Cordova St @ Homer St,,49.283719,-123.10959,BUS ZN,,0,,1
 360,50356,Southbound Alma St @ W 6th Ave,,49.266642,-123.185897,BUS ZN,,0,,2
 3600,53561,Southbound Mundy St @ Hillside Ave,,49.232574,-122.835744,BUS ZN,,0,,1
 3601,59001,Westbound Cape Horn Ave @ Mundy St,,49.230889,-122.837596,BUS ZN,,0,,1
@@ -7031,6 +7026,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 7144,57076,Westbound Willowbrook Dr @ 200 St,,49.116843,-122.67023,BUS ZN,,0,,1
 7145,57077,Westbound Willowbrook Dr @ 198 St,,49.116872,-122.673698,BUS ZN,,0,,1
 7146,57078,Eastbound Fraser Hwy @ 200 St,,49.107806,-122.666566,BUS ZN,,0,,1
+7147,57079,Eastbound Fraser Hwy @ 201A St,,49.106396,-122.663417,BUS ZN,,0,,1
 7148,57080,Southbound 203 St @ Michaud Cres,,49.102377,-122.659804,BUS ZN,,0,,1
 7149,57081,Southbound 203 St @ 54 Ave,,49.100069,-122.659892,BUS ZN,,0,,1
 715,50708,Westbound E 41 Ave @ Windsor St,,49.23291,-123.085282,BUS ZN,,0,,1
@@ -8419,6 +8415,8 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 9301,58941,Southbound Mall Access Rd @ 6500 Block,,49.121261,-122.663769,BUS ZN,,0,,2
 9302,58942,Northbound Mall Access Rd @ 6400 Block,,49.120449,-122.663502,BUS ZN,,0,,2
 9303,58943,Westbound 64 Ave @ 202 St,,49.119053,-122.663773,BUS ZN,,0,,1
+9304,58908,Westbound 64 Ave @ 201 St,,49.119074,-122.666228,BUS ZN,,0,,1
+9306,58909,Eastbound 64 Ave @ 200 St,,49.11889,-122.66738,BUS ZN,,0,,1
 9307,58893,Westbound W Pender St @ Burrard St,,49.286833,-123.118031,BUS ZN,,0,,1
 9308,58665,Southbound Pinetree Way @ Grizzly Place,,49.301061,-122.784931,BUS ZN,,0,,1
 9309,58663,Southbound Pinetree Way @ Bobcat Place,,49.30408,-122.784217,BUS ZN,,0,,1
