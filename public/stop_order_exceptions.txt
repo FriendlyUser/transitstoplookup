@@ -1,4 +1,4 @@
-route_name,direction_name,direction_do,stop_id,stop_name,stop_do
+﻿route_name,direction_name,direction_do,stop_id,stop_name,stop_do
 Canada Line,Northbound,0,11295,RICHMOND-BRIGHOUSE STATION,1
 Canada Line,Northbound,0,11293,LANSDOWNE STATION,2
 Canada Line,Northbound,0,11291,ABERDEEN STATION,3

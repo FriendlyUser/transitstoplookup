@@ -1,4 +1,4 @@
-route_name,direction_id,direction_name,direction_do
+﻿route_name,direction_id,direction_name,direction_do
 2,0,Burrard Station,0
 2,1,Macdonald,1
 3,0,Waterfront Station,0
