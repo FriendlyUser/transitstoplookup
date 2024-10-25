@@ -39,6 +39,7 @@ export default {
         this.parseTripsData(tripsData);
         this.parseRoutesData(routesData);
         this.isLoading = false; // Data loaded
+        this.loadSearchFromUrl();
       })
       .catch((error) => {
         this.error = 'Error loading GTFS data';
@@ -439,6 +440,21 @@ export default {
       }
 
       selection?.removeAllRanges();
+    },
+
+    // Load search parameters from URL
+    loadSearchFromUrl() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const city = urlParams.get('city');
+      const street = urlParams.get('street');
+      const radius = urlParams.get('radius');
+
+      if (city && street && radius) {
+        this.city = city;
+        this.street = street;
+        this.radius = parseInt(radius, 10);
+        this.searchLocation();
+      }
     },
   },
 };
