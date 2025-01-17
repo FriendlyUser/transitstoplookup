@@ -72,6 +72,7 @@ route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_
 45596,TL,080,Marine Dr Station/River District,,3,,,
 46099,TL,102,New Westminster Station/Victoria  Hill,,3,,,
 46604,TL,R6,Scott Rd,,3,,008522,FFFFFF
+48855,TL,338,East Fraser Heights/Guildford,,3,,,
 6612,TL,002,Macdonald/Burrard Station,,3,,,
 6613,TL,003,Main/Waterfront Station,,3,,,
 6614,TL,004,Powell/Downtown/UBC,,3,,,
@@ -107,7 +108,7 @@ route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_
 6648,TL,116,Edmonds Station/Metrotown Station,,3,,,
 6649,TL,123,New West Station/Brentwood Station,,3,,,
 6650,TL,129,Patterson Station/Holdom Station,,3,,,
-6651,TL,130,Metrotown/Pender/Kootenay,,3,,,
+6651,TL,130,Metrotown/Phibbs Exchange,,3,,,
 6652,TL,134,Lake City Station/Brentwood Station,,3,,,
 6654,TL,136,Lougheed Station/Brentwood Station,,3,,,
 6656,TL,143,Burquitlam Station/SFU,,3,,,
