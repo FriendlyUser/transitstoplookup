@@ -1881,6 +1881,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 12671,60395,Westbound W 41 Ave @ Carnarvon St,,49.234826,-123.174148,BUS ZN,,0,,1
 12672,58268,Eastbound W 41 Ave @ Oak St,,49.233818,-123.127728,BUS ZN,,0,,1
 12673,59615,Southbound 203 St @ Dewdney Trunk Rd,,49.220895,-122.657041,BUS ZN,,0,,1
+12677,60443,Westbound Sawmill Cres @ River District Crossing,,49.205981,-123.031611,BUS ZN,,0,,1
 12681,53312,Burrard Station @ Bay 6,,49.28616,-123.118293,BUS ZN,,0,,1
 12682,60380,Southbound Lonsdale Ave @ W 3rd St,,49.312929,-123.077751,BUS ZN,,0,,1
 12683,60376,Westbound Marine Dr @ Capilano Rd,,49.324309,-123.121976,BUS ZN,,0,,1
@@ -2028,7 +2029,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 12908,60647,Northbound Lonsdale Ave @ E 17 St,,49.323923,-123.072194,BUS ZN,,0,,1
 1291,51280,Eastbound Prior St @ Hawks Ave,,49.276481,-123.087659,BUS ZN,,0,,1
 12911,60268,Northbound Oak St @ W 67 Ave,,49.210429,-123.130057,BUS ZN,,0,,1
-12915,60653,Eastbound Sawmill Cres @ River District Crossing,,49.205918,-123.031907,BUS ZN,,0,,1
 12916,60654,King George Station @ Bay 1,,49.182376,-122.845722,BUS ZN,,0,,1
 12917,60655,Westbound Inglis Dr @ Bell Irving Rd,,49.177808,-123.170945,BUS ZN,,0,,1
 12918,61435,Westbound W 49th Ave @ Manitoba St,,49.225866,-123.107959,BUS ZN,,0,,1
@@ -2720,7 +2720,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 201,50201,Eastbound W 41 Ave @ Osler St,,49.233911,-123.129836,BUS ZN,,0,,1
 2010,51993,Eastbound Imperial St @ Boundary Rd,,49.221875,-123.022768,BUS ZN,,0,,1
 2011,51994,Eastbound Imperial St @ Mandy Ave,,49.221886,-123.017609,BUS ZN,,0,,1
-2015,51998,Northbound Willingdon Ave @ Mayberry St,,49.226048,-123.009158,BUS ZN,,0,,1
+2015,51998,Northbound Willingdon Ave @ Mayberry St,,49.225697,-123.009541,BUS ZN,,0,,1
 2016,51999,Metrotown Station @ Bay 3,,49.226002,-123.002615,BUS ZN,,0,,1
 202,56125,Northbound Granville St @ W 41 Ave,,49.234888,-123.139463,BUS ZN,,0,,1
 2020,52003,Westbound Imperial St @ McKay Ave,,49.222002,-123.00948,BUS ZN,,0,,1
@@ -3631,7 +3631,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 3144,53111,Northbound E Columbia St @ Keary St,,49.225777,-122.892836,BUS ZN,,0,,1
 3145,61533,Northbound E Columbia St @ Cedar St,,49.230458,-122.892653,BUS ZN,,0,,1
 3146,53113,Northbound E Columbia St @ Holmes St,,49.236127,-122.892459,BUS ZN,,0,,1
-3147,53114,Northbound North Rd @ Delestre Ave,,49.243516,-122.892495,BUS ZN,,0,,2
+3147,53114,Northbound North Rd @ Delestre Ave,,49.243516,-122.892495,BUS ZN,,0,,1
 315,50312,Northbound Dunbar Diversion @ W 14 Ave,,49.260126,-123.184213,BUS ZN,,0,,2
 3150,58191,Northbound North Rd @ Gatineau Place,,49.248513,-122.892661,BUS ZN,,0,,1
 3151,53118,Northbound North Rd @ Cameron St,,49.253122,-122.892752,BUS ZN,,0,,1
@@ -3831,7 +3831,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 3417,53380,Westbound Laurentian Cres @ Sheridan Ave,,49.239927,-122.847743,BUS ZN,,0,,2
 3418,53381,Westbound Brunette Ave @ Laurentian Cres,,49.24028,-122.85036,BUS ZN,,0,,1
 3419,53382,Westbound Brunette Ave @ Schoolhouse St,,49.240679,-122.852859,BUS ZN,,0,,1
-342,50338,Southbound Oak St @ Nanton Ave,,49.245988,-123.127793,BUS ZN,,0,,2
+342,50338,Southbound Oak St @ Nanton Ave,,49.245988,-123.127793,BUS ZN,,0,,1
 3420,53383,Westbound Brunette Ave @ Laval St,,49.239561,-122.858388,BUS ZN,,0,,1
 3422,53385,Westbound Brunette Ave @ Nelson St,,49.238045,-122.865946,BUS ZN,,0,,1
 3423,53386,Westbound Brunette Ave @ Lebleu St,,49.237616,-122.868095,BUS ZN,,0,,1
