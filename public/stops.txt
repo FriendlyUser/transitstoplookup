@@ -370,7 +370,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 10642,55247,Eastbound Fraser Hwy @ 168 St,,49.147436,-122.755697,BUS ZN,,0,,1
 10643,57140,Westbound Fraser Hwy @ 188 St,,49.124178,-122.702492,BUS ZN,,0,,1
 10644,57092,Eastbound Fraser Hwy @ 188 St,,49.123226,-122.70099,BUS ZN,,0,,1
-10645,60715,Westbound Fraser Hwy @ 68 Ave,,49.126043,-122.706601,BUS ZN,,0,,1
 10646,60714,Eastbound Fraser Hwy @ 68 Ave,,49.125368,-122.705744,BUS ZN,,0,,1
 10647,57141,Westbound Fraser Hwy @ 184 St,,49.129092,-122.71329,BUS ZN,,0,,1
 10648,57091,Eastbound Fraser Hwy @ 184 St,,49.128198,-122.711511,BUS ZN,,0,,1
@@ -1760,7 +1759,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 12482,60224,Southbound 140 St @ 93A Ave,,49.172102,-122.834695,BUS ZN,,0,,1
 12483,60219,Westbound University Blvd @ Western Parkway,,49.266634,-123.244736,BUS ZN,,0,,1
 12484,56346,Westbound Cranley Dr @ 157A St,,49.044433,-122.785542,BUS ZN,,0,,1
-12487,60223,Northbound Fraser St @ E 20 Ave,,49.253502,-123.08986,BUS ZN,,0,,1
+12487,60223,Northbound Fraser St @ E 19 Ave,,49.253502,-123.08986,BUS ZN,,0,,1
 12489,59468,Eastbound W Hastings St @ Abbott St,,49.28179,-123.106526,BUS ZN,,0,,1
 1249,51239,Southbound Commercial Dr @ Kitchener St,,49.271878,-123.069692,BUS ZN,,0,,1
 12494,60197,Southbound Burrard St @ Harwood St,,49.277837,-123.131265,BUS ZN,,0,,1
@@ -2150,6 +2149,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 13049,62006,Westbound 124 Ave @ 216 St,,49.227909,-122.622018,BUS ZN,,0,,2
 13050,62007,Eastbound 124 Ave @ 216 St,,49.227796,-122.6215,BUS ZN,,0,,2
 13051,62011,Northbound Douglas Rd @ Still Creek Ave,,49.260679,-122.984385,BUS ZN,,0,,1
+13052,62012,Eastbound Fraser Hwy @ 140 St,,49.1794,-122.836332,BUS ZN,,0,,1
 1307,51296,Southbound Knight St @ E 23 Ave,,49.249651,-123.076243,BUS ZN,,0,,1
 1308,51297,Southbound Knight St @ E King Edward Ave,,49.248155,-123.076298,BUS ZN,,0,,1
 1309,51298,Southbound Knight St @ E 27 Ave,,49.24614,-123.076373,BUS ZN,,0,,2
@@ -2647,7 +2647,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 1886,51872,Westbound Hastings St @ Kensington Ave,,49.280464,-122.970602,BUS ZN,,0,,1
 1887,51873,Westbound Hastings St @ Fell Ave,,49.280427,-122.976062,BUS ZN,,0,,1
 1888,51874,Westbound Hastings St @ Holdom Ave,,49.280436,-122.98142,BUS ZN,,0,,1
-189,50189,Southbound Richards St @ W Hastings St,,49.283796,-123.11242,BUS ZN,,0,,1
 1891,51877,Westbound Hastings St @ Hythe Ave,,49.28024,-122.991013,BUS ZN,,0,,1
 1892,51878,Westbound Hastings St @ Gamma Ave,,49.281077,-122.995896,BUS ZN,,0,,1
 1893,51879,Westbound Hastings St @ Alpha Ave,,49.281099,-123.000747,BUS ZN,,0,,1
@@ -5269,7 +5268,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 5121,55069,Northbound University Dr @ Old Yale Rd,,49.186513,-122.851544,BUS ZN,,0,,1
 5122,55070,Surrey Central Station @ Bay 9,,49.188967,-122.848465,BUS ZN,,0,,1
 5124,55072,Southbound 132 St @ Old Yale Rd,,49.187331,-122.856596,BUS ZN,,0,,1
-5125,55073,Westbound 100 Ave @ 132 St,,49.184476,-122.857499,BUS ZN,,0,,2
+5125,55073,Westbound 100 Ave @ 132 St,,49.184476,-122.857499,BUS ZN,,0,,1
 5126,55074,Westbound 100 Ave @ 129A St,,49.184484,-122.862697,BUS ZN,,0,,1
 5127,55075,Westbound 100 Ave @ 128 St,,49.184511,-122.868167,BUS ZN,,0,,1
 5128,55076,Westbound 100 Ave @ Helen Dr,,49.184551,-122.87309,BUS ZN,,0,,1
@@ -6411,6 +6410,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 6431,56371,Eastbound 24 Ave @ 134 St,,49.045684,-122.850534,BUS ZN,,0,,1
 644,50638,Eastbound Davie St @ Thurlow St,,49.280147,-123.13096,BUS ZN,,0,,1
 6449,56389,Westbound Buena Vista Ave @ Foster St,,49.023963,-122.804312,BUS ZN,,0,,2
+645,50639,Southbound Richards St @ W Cordova St,,49.2844,-123.111471,BUS ZN,,0,,1
 6450,56390,Westbound Buena Vista Ave @ Blackwood St,,49.023974,-122.807022,BUS ZN,,0,,2
 6451,56391,Westbound Buena Vista Ave @ Beach View Ave,,49.023978,-122.808889,BUS ZN,,0,,2
 6452,56392,Westbound Buena Vista Ave @ Oxford St,,49.023986,-122.811772,BUS ZN,,0,,2
@@ -6429,7 +6429,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 6466,59810,South Surrey Park & Ride @ Bay 2,,49.071748,-122.822308,BUS ZN,,0,,1
 6467,56406,Surrey Central Station @ Bay 11,,49.189406,-122.847763,BUS ZN,,0,,1
 6468,58164,King George Station @ Bay 3,,49.181723,-122.842052,BUS ZN,,0,,1
-6469,56408,Eastbound Fraser Hwy @ 140 St,,49.178455,-122.833717,BUS ZN,,0,,1
 6470,56409,Eastbound Fraser Hwy @ 148 St,,49.169833,-122.811446,BUS ZN,,0,,1
 6471,56410,Eastbound Fraser Hwy @ 150 St,,49.167843,-122.806304,BUS ZN,,0,,1
 6472,56411,Eastbound 64 Ave @ 197 St,,49.11897,-122.676339,BUS ZN,,0,,1
@@ -6445,7 +6444,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 6482,56421,Steveston Exchange @ Bay 2,,49.126357,-123.18361,BUS ZN,,0,,1
 6483,56422,Northbound No. 1 Rd @ Chatham St,,49.126861,-123.181116,BUS ZN,,0,,1
 6484,56423,Northbound No. 1 Rd @ Richmond St,,49.128707,-123.181137,BUS ZN,,0,,1
-6485,56424,Northbound No. 1 Rd @ Georgia St,,49.130667,-123.181158,BUS ZN,,0,,2
+6485,56424,Northbound No. 1 Rd @ Georgia St,,49.130667,-123.181158,BUS ZN,,0,,1
 6486,56425,Northbound No. 1 Rd @ Steveston Hwy,,49.13419,-123.181213,BUS ZN,,0,,1
 6487,56426,Northbound No. 1 Rd @ Fundy Gate,,49.136348,-123.181233,BUS ZN,,0,,1
 6488,56427,Northbound No. 1 Rd @ 10200 Block,,49.139096,-123.181238,BUS ZN,,0,,1
@@ -7871,7 +7870,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 828,50821,Northbound Fraser St @ E 62 Ave,,49.214241,-123.090903,BUS ZN,,0,,1
 8280,58045,Westbound Steveston Hwy @ Seaward Gate,,49.133464,-123.100078,BUS ZN,,0,,1
 8281,58046,Eastbound Steveston Hwy @ Seaward Gate,,49.133327,-123.100556,BUS ZN,,0,,1
-8282,58047,Northbound Hwy 99 Offramp @ Steveston Hwy,,49.133056,-123.084336,BUS ZN,,0,,1
+8282,58047,Northbound Hwy 99 Offramp @ Steveston Hwy,,49.133056,-123.084336,BUS ZN,,0,,2
 8283,58048,Southbound Hwy 99 Onramp @ Steveston Hwy,,49.13283,-123.08712,BUS ZN,,0,,1
 8288,58379,Southbound Kensington Ave @ Hammarskjold Dr,,49.277492,-122.970149,BUS ZN,,0,,1
 8289,58051,Eastbound Keefer Place @ Taylor St,,49.279294,-123.105515,BUS ZN,,0,,1
