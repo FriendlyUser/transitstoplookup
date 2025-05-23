@@ -432,6 +432,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 1075,51066,Southbound Clarendon St @ E 40 Ave,,49.233499,-123.055616,BUS ZN,,0,,1
 10753,60884,Southbound Arborlynn Dr @ Mountain Hwy,,49.317462,-123.035802,BUS ZN,,0,,2
 10755,51600,Northbound Wesbrook Mall @ 2900 Block,,49.258778,-123.238774,BUS ZN,,0,,1
+10757,60858,Southbound Fraserwood Place @ Westminster Hwy,,49.168184,-122.983805,BUS ZN,,0,,1
 10758,60856,Northbound Graybar Rd @ Westminster Hwy,,49.168304,-122.989641,BUS ZN,,0,,1
 10759,60857,Westbound Gordon Way @ 21300 Block,,49.167469,-122.987092,BUS ZN,,0,,1
 1076,51067,Westbound E 41 Ave @ Clarendon St,,49.232902,-123.055955,BUS ZN,,0,,1
@@ -780,6 +781,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 11204,52487,Eastbound 6th Ave @ 6th St,,49.213373,-122.919768,BUS ZN,,0,,1
 11205,56165,Westbound Bayview St @ Beecher St,,49.053934,-122.877081,BUS ZN,,0,,1
 11206,61285,Northbound 52 St @ 12 Ave,,49.025614,-123.079669,BUS ZN,,0,,1
+11207,61235,Westbound Murray St @ Electronic Ave,,49.278898,-122.841659,BUS ZN,,0,,1
 11208,56512,Southbound No. 1 Rd @ Steveston Hwy,,49.133314,-123.181409,BUS ZN,,0,,1
 11209,61097,Eastbound W 16 Ave @ Willow St,,49.256969,-123.121578,BUS ZN,,0,,1
 1121,51112,Eastbound W 51 Ave @ Arbutus St,,49.224918,-123.154675,BUS ZN,,0,,1
@@ -3856,7 +3858,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 3439,53402,Northbound Blue Mountain St @ Austin Ave,,49.248661,-122.869388,BUS ZN,,0,,1
 3440,53403,Eastbound Austin Ave @ Nelson St,,49.248912,-122.866254,BUS ZN,,0,,2
 3441,53404,Eastbound Austin Ave @ Marmont St,,49.248903,-122.861563,BUS ZN,,0,,1
-3442,53405,Eastbound Austin Ave @ Gatensbury St,,49.248888,-122.857586,BUS ZN,,0,,1
+3442,53405,Eastbound Austin Ave @ Gatensbury St,,49.248889,-122.858264,BUS ZN,,0,,1
 3443,53406,Northbound Poirier St @ Austin Ave,,49.249318,-122.846569,BUS ZN,,0,,1
 3444,53407,Northbound Poirier St @ King Albert Ave,,49.251691,-122.846464,BUS ZN,,0,,1
 3446,53408,Eastbound Austin Ave @ Laurentian Cres,,49.248938,-122.843554,BUS ZN,,0,,1
@@ -3864,7 +3866,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 3448,53410,Eastbound Austin Ave @ Draycott St,,49.248977,-122.836314,BUS ZN,,0,,1
 3449,53411,Eastbound Austin Ave @ Mundy St,,49.248978,-122.833279,BUS ZN,,0,,1
 345,50341,Southbound Oak St @ W 33 Ave,,49.241077,-123.12796,BUS ZN,,0,,1
-3450,53412,Eastbound Austin Ave @ 2300 Block,,49.248998,-122.828007,BUS ZN,,0,,1
+3450,53412,Eastbound Austin Ave @ 2300 Block,,49.24901,-122.827911,BUS ZN,,0,,1
 3451,53413,Southbound Hickey Dr @ Austin Ave,,49.248565,-122.824482,BUS ZN,,0,,1
 3452,53414,Southbound Hickey Dr @ Tolmie Ave,,49.246466,-122.824501,BUS ZN,,0,,1
 3453,53415,Eastbound Hickey Dr @ Bognor St,,49.243502,-122.821386,BUS ZN,,0,,1
@@ -6736,7 +6738,11 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 6803,56738,Eastbound Steveston Hwy @ Ransford Gate,,49.133682,-123.1771,BUS ZN,,0,,1
 6804,59121,Eastbound Steveston Hwy @ Trimaran Gate,,49.133671,-123.172993,BUS ZN,,0,,1
 6805,56740,Eastbound Steveston Hwy @ Railway Ave,,49.133621,-123.16888,BUS ZN,,0,,1
+6806,56741,Eastbound Steveston Hwy @ Lassam Rd,,49.133497,-123.162861,BUS ZN,,0,,1
+6807,56742,Eastbound Steveston Hwy @ Kingfisher Dr,,49.133462,-123.160811,BUS ZN,,0,,1
 6808,56743,Eastbound Steveston Hwy @ No. 2 Rd,,49.133422,-123.158275,BUS ZN,,0,,1
+6809,56744,Eastbound Steveston Hwy @ Housman St,,49.133444,-123.154796,BUS ZN,,0,,1
+6810,56745,Eastbound Steveston Hwy @ Constable Gate,,49.133441,-123.151449,BUS ZN,,0,,1
 6813,56748,Northbound Springmont Gate @ Steveston Hwy,,49.134063,-123.191743,BUS ZN,,0,,1
 6814,56749,Northbound Springmont Dr @ Springmont Gate,,49.135962,-123.191846,BUS ZN,,0,,1
 6815,56750,Northbound Springmont Dr @ Springside Place,,49.137315,-123.19274,BUS ZN,,0,,1
@@ -8108,7 +8114,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 8740,58388,Northbound Gilmore Ave @ Halifax St,,49.268646,-123.014167,BUS ZN,,0,,1
 8741,58391,Eastbound Henning Dr @ 3800 Block,,49.263862,-123.018496,BUS ZN,,0,,1
 8742,58392,Eastbound Henning Dr @ Boundary Rd,,49.263596,-123.022725,BUS ZN,,0,,1
-8743,58386,Westbound Lougheed Hwy @ Gilmore Ave,,49.266208,-123.014957,BUS ZN,,0,,2
+8743,58386,Westbound Lougheed Hwy @ Gilmore Ave,,49.266208,-123.014957,BUS ZN,,0,,1
 8745,58390,Westbound Henning Dr @ 3800 Block,,49.264012,-123.019214,BUS ZN,,0,,2
 8746,60804,Lougheed Town Centre Station @ Platform 2,,49.248549,-122.896879,ZN 2,,0,99926,1
 8747,60806,Production Way-University Station @ Platform 1,,49.253465,-122.918191,ZN 2,,0,99925,1
@@ -8573,7 +8579,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 9516,59034,Eastbound Hartley Ave @ 1600 Block,,49.226444,-122.843517,BUS ZN,,0,,1
 9517,59019,Northbound Schooner St @ Hartley Ave,,49.226533,-122.839997,BUS ZN,,0,,1
 9518,59017,Southbound Brigantine Dr @ United Blvd,,49.228444,-122.84875,BUS ZN,,0,,1
-9519,59033,Westbound Hartley Ave @ 1600 Block,,49.226607,-122.844096,BUS ZN,,0,,1
+9519,59033,Westbound Hartley Ave @ 1575 Block,,49.226758,-122.845445,BUS ZN,,0,,1
 952,50944,Eastbound E Hastings St @ Victoria Dr,,49.28108,-123.064979,BUS ZN,,0,,1
 9520,59038,Westbound Hartley Ave @ Schooner St,,49.226279,-122.840852,BUS ZN,,0,,1
 9521,59039,Southbound Schooner St @ United Blvd,,49.227525,-122.839914,BUS ZN,,0,,1
