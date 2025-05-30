@@ -2140,7 +2140,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 13044,61996,Westbound Fraser Hwy @ 166 St,,49.15061,-122.761434,BUS ZN,,0,,1
 13046,61998,Westbound Fraser Hwy @ 150 St,,49.168036,-122.806183,BUS ZN,,0,,1
 13047,61686,Westbound 104 Ave @ 168 St,,49.19169,-122.757052,BUS ZN,,0,,1
-13048,50039,Westbound Water St @ Cambie St,,49.284573,-123.109875,BUS ZN,,0,,1
 13049,62006,Westbound 124 Ave @ 216 St,,49.227909,-122.622018,BUS ZN,,0,,2
 13050,62007,Eastbound 124 Ave @ 216 St,,49.227796,-122.6215,BUS ZN,,0,,2
 13051,62011,Northbound Douglas Rd @ Still Creek Ave,,49.260679,-122.984385,BUS ZN,,0,,1
@@ -2163,6 +2162,9 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 13070,59363,Westbound Fraser Hwy @ 159 St,,49.158569,-122.78184,BUS ZN,,0,,1
 13071,62032,Southbound 144 St @ 8100 Block,,49.149175,-122.823561,BUS ZN,,0,,1
 13072,62031,Northbound 144 St @ 8100 Block,,49.149561,-122.823357,BUS ZN,,0,,1
+13073,61576,Westbound E Cordova St @ Columbia St,,49.282405,-123.102668,BUS ZN,,0,,1
+13074,62028,Westbound W Cordova St @ Abbott St,,49.283083,-123.107266,BUS ZN,,0,,1
+13075,53269,Southbound Glenayre Dr @ Clarke Rd,,49.270272,-122.879936,BUS ZN,,0,,1
 1308,51297,Southbound Knight St @ E King Edward Ave,,49.248155,-123.076298,BUS ZN,,0,,1
 1309,51298,Southbound Knight St @ E 27 Ave,,49.24614,-123.076373,BUS ZN,,0,,2
 1310,51299,Southbound Knight St @ E 29 Ave,,49.244204,-123.076425,BUS ZN,,0,,1
@@ -3539,6 +3541,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 3035,53004,Eastbound Como Lake Ave @ Porter St,,49.263445,-122.862463,BUS ZN,,0,,1
 3037,53006,Eastbound Como Lake Ave @ Schoolhouse St,,49.263376,-122.851205,BUS ZN,,0,,1
 3038,53007,Eastbound Como Lake Ave @ Wasco St,,49.26337,-122.849118,BUS ZN,,0,,1
+304,50301,Northbound Dunbar St @ W 36 Ave,,49.239851,-123.185157,BUS ZN,,0,,2
 3040,53009,Eastbound Como Lake Ave @ Linton St,,49.263289,-122.841357,BUS ZN,,0,,1
 3041,59088,Eastbound Como Lake Ave @ Custer Court,,49.263264,-122.837396,BUS ZN,,0,,1
 3043,53012,Eastbound Como Lake Ave @ Thermal Dr,,49.263198,-122.833721,BUS ZN,,0,,1
@@ -4087,6 +4090,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 3736,53697,Southbound Pitt River Rd @ Columbia Ave,,49.241865,-122.773592,BUS ZN,,0,,1
 374,50370,Southbound Dunbar St @ W 33 Ave,,49.242056,-123.185368,BUS ZN,,0,,1
 3749,59385,Westbound Citadel Dr @ Pitt River Rd,,49.239063,-122.774036,BUS ZN,,0,,1
+375,50371,Southbound Dunbar St @ W 35 Ave,,49.240149,-123.185397,BUS ZN,,0,,2
 3750,53711,Westbound Citadel Dr @ Gateway Place,,49.236939,-122.776466,BUS ZN,,0,,1
 3751,53712,Westbound Citadel Dr @ Kensington Cres East,,49.235725,-122.777541,BUS ZN,,0,,1
 3752,53713,Westbound Citadel Dr @ Kensington Cres West,,49.234348,-122.778557,BUS ZN,,0,,1
@@ -4130,7 +4134,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 3797,53758,Westbound Barnet Rd @ Texaco Dr,,49.290367,-122.932258,BUS ZN,,0,,2
 3798,53759,Westbound Barnet Rd @ 7500 Block,,49.289625,-122.941653,BUS ZN,,0,,1
 3799,53760,Southbound Inlet Dr @ Bayview Dr,,49.287022,-122.953127,BUS ZN,,0,,2
-38,50038,Westbound Powell St @ Columbia St,,49.283285,-123.102896,BUS ZN,,0,,1
 3800,53761,Southbound Inlet Dr @ Ridge Dr,,49.282881,-122.9565,BUS ZN,,0,,1
 3801,53762,Eastbound Glen Dr @ Johnson St,,49.282646,-122.801103,BUS ZN,,0,,1
 3803,53764,Southbound Westwood St @ Lincoln Ave,,49.278532,-122.790596,BUS ZN,,0,,1
@@ -5670,7 +5673,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 560,50555,Southbound Granville St @ S Connaught Dr,,49.235947,-123.139659,BUS ZN,,0,,1
 5600,55545,Southbound 132 St @ 65B Ave,,49.12187,-122.856674,BUS ZN,,0,,1
 5601,55546,Southbound 132 St @ 64 Ave,,49.118373,-122.856668,BUS ZN,,0,,1
-5602,55547,Southbound 132 St @ 62 Ave,,49.115074,-122.856667,BUS ZN,,0,,1
+5602,55547,Southbound 132 St @ 62 Ave,,49.115074,-122.856667,BUS ZN,,0,,2
 5603,55548,Southbound 132 St @ 60 Ave,,49.111611,-122.856745,BUS ZN,,0,,1
 5604,55549,Eastbound Hwy 10 @ 132 St,,49.108083,-122.855763,BUS ZN,,0,,1
 5605,55550,Westbound 56 Ave @ 136 St,,49.105198,-122.846078,BUS ZN,,0,,1
