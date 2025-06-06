@@ -61370,12 +61370,6 @@ route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,block_id,
 6692,3,14521616,255 Park Royal Only,,1,2137294,301298,0,1
 6692,3,14521617,255 Park Royal Only,,1,2137292,301298,0,1
 6692,3,14521618,255 Park Royal Only,,1,2137294,301298,0,1
-6770,154901,14607486,West Coast Express Train To Waterfront,,1,2143254,301805,0,1
-6770,154901,14607487,West Coast Express Train To Waterfront,,1,2143255,301805,0,1
-6770,154901,14607488,West Coast Express Train To Waterfront,,1,2143256,301805,0,1
-6770,154901,14607489,West Coast Express Train To Mission,,0,2143257,301804,0,1
-6770,154901,14607490,West Coast Express Train To Mission,,0,2143258,301804,0,1
-6770,154901,14607491,West Coast Express Train To Mission,,0,2143259,301804,0,1
 22639,1,14671009,227 Lynn Valley,,0,2133481,301195,0,1
 22639,1,14671010,227 Lynn Valley,,0,2133691,301195,0,1
 22639,1,14671011,227 Lynn Valley,,0,2133481,301195,0,1
