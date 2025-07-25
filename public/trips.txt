@@ -63184,4 +63184,20 @@ route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,block_id,
 6779,1,14809221,262 Lions Bay- Brunswick,,0,2153154,302547,0,1
 6779,1,14809222,262 Caulfeild,,1,2153154,302550,0,1
 6779,1,14809223,262 Caulfeild,,1,2153154,302550,0,1
+6771,1201,14809240,SeaBus Northbound To Lonsdale Quay,,0,2157303,303052,0,1
+6771,1201,14809241,SeaBus Northbound To Lonsdale Quay,,0,2157303,303052,0,1
+6771,1201,14809242,SeaBus Northbound To Lonsdale Quay,,0,2157303,303052,0,1
+6771,1201,14809243,SeaBus Northbound To Lonsdale Quay,,0,2157303,303052,0,1
+6771,1201,14809244,SeaBus Southbound To Waterfront,,1,2157303,303053,0,1
+6771,1201,14809245,SeaBus Southbound To Waterfront,,1,2157303,303053,0,1
+6771,1201,14809246,SeaBus Southbound To Waterfront,,1,2157303,303053,0,1
+6771,1201,14809247,SeaBus Southbound To Waterfront,,1,2157303,303053,0,1
+6771,2,14809248,SeaBus Northbound To Lonsdale Quay,,0,2157304,303052,0,1
+6771,2,14809249,SeaBus Northbound To Lonsdale Quay,,0,2157304,303052,0,1
+6771,2,14809250,SeaBus Northbound To Lonsdale Quay,,0,2157304,303052,0,1
+6771,2,14809251,SeaBus Northbound To Lonsdale Quay,,0,2157304,303052,0,1
+6771,2,14809252,SeaBus Southbound To Waterfront,,1,2157304,303053,0,1
+6771,2,14809253,SeaBus Southbound To Waterfront,,1,2157304,303053,0,1
+6771,2,14809254,SeaBus Southbound To Waterfront,,1,2157304,303053,0,1
+6771,2,14809255,SeaBus Southbound To Waterfront,,1,2157304,303053,0,1
 HD,-999,48441,,,0,NA,4484,2,0
