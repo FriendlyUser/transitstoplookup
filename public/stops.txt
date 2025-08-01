@@ -955,6 +955,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 11470,56450,Southbound No. 3 Rd @ Westminster Hwy,,49.169765,-123.136665,BUS ZN,,0,,1
 11473,51941,Northbound Burrard St @ W 3rd Ave,,49.269179,-123.145428,BUS ZN,,0,,1
 11474,50533,Southbound Granville St @ Nelson St,,49.278877,-123.123712,BUS ZN,,0,,1
+11475,50536,Southbound Granville St @ Drake St,,49.275854,-123.128375,BUS ZN,,0,,2
 11477,50611,Eastbound Robson St @ Bidwell St,,49.29023,-123.133644,BUS ZN,,0,,1
 11481,50624,Westbound Robson St @ Burrard St,,49.283556,-123.123086,BUS ZN,,0,,1
 11484,50627,Westbound Robson St @ Broughton St,,49.288152,-123.130152,BUS ZN,,0,,1
@@ -1809,7 +1810,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 126,50126,Southbound Mackenzie St @ W 29 Ave,,49.245848,-123.170308,BUS ZN,,0,,1
 1260,51250,Southbound Victoria Dr @ E 53 Ave,,49.221481,-123.065964,BUS ZN,,0,,1
 12600,60358,UBC Exchange @ Unloading Only,,49.267674,-123.247621,BUS ZN,,0,,1
-12602,60351,Southbound Station St @ National Ave,,49.273853,-123.09865,BUS ZN,,0,,1
+12602,60351,Southbound Station St @ National Ave,,49.273996,-123.098665,BUS ZN,,0,,1
 12603,60269,Northbound Burrard St @ Smithe St,,49.282359,-123.124019,BUS ZN,,0,,1
 12606,60366,Westbound Oakland St @ Dufferin Ave,,49.229249,-122.980952,BUS ZN,,0,,1
 12608,60368,Northbound 80 St @ 4500 Block,,49.085606,-123.001679,BUS ZN,,0,,1
@@ -5308,7 +5309,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 5177,55125,Eastbound 108 Ave @ Oriole Dr,,49.198663,-122.80821,BUS ZN,,0,,1
 5178,55126,Southbound 150 St @ 107A Ave,,49.197569,-122.806329,BUS ZN,,0,,1
 5179,55127,Southbound 150 St @ 10600 Block,,49.194934,-122.80642,BUS ZN,,0,,1
-518,50514,Westbound Powell St @ Heatley Ave,,49.283076,-123.089941,BUS ZN,,0,,1
+518,50514,Westbound Powell St @ Heatley Ave,,49.28308,-123.090031,BUS ZN,,0,,1
 5180,55128,Guildford Exchange @ Bay 1,,49.191353,-122.803459,BUS ZN,,0,,1
 5182,55130,Southbound 152 St @ 105 Ave,,49.192726,-122.801058,BUS ZN,,0,,1
 5183,55131,Guildford Exchange @ Bay 2,,49.191632,-122.804013,BUS ZN,,0,,1
@@ -6299,7 +6300,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 6297,56237,Eastbound Marine Dr @ Elm St,,49.022584,-122.810074,BUS ZN,,0,,2
 6298,56238,Eastbound Marine Dr @ Martin St,,49.021811,-122.807478,BUS ZN,,0,,1
 6299,56239,Eastbound Marine Dr @ 15000 Block,,49.020745,-122.803855,BUS ZN,,0,,1
-63,50063,Northbound Macdonald St @ W 3rd Ave,,49.269101,-123.168208,BUS ZN,,0,,1
+63,50063,Northbound Macdonald St @ W 4th Ave,,49.269101,-123.168208,BUS ZN,,0,,1
 6300,56240,Eastbound Marine Dr @ Fir St,,49.019905,-122.800901,BUS ZN,,0,,1
 6301,56241,Eastbound Marine Dr @ Dolphin St,,49.019037,-122.798086,BUS ZN,,0,,1
 6302,56242,Eastbound Marine Dr @ Balsam St,,49.017817,-122.794239,BUS ZN,,0,,1
