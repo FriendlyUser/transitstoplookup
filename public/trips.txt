@@ -29253,7 +29253,7 @@ route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,block_id,
 6704,1,14708951,320 Surrey Central Station,,1,2149791,307968,0,1
 6704,1,14708952,320 Surrey Central Station,,1,2149679,307968,0,1
 6704,1,14708953,320 Surrey Central Station,,1,2149772,307966,0,1
-6704,1,14708954,320 Surrey Central Station,,1,2149842,307968,0,1
+6704,1,14708954,320 Surrey Central Station,,1,2149842,307969,0,1
 6704,1,14708955,320 Surrey Central Station,,1,2149755,307966,0,1
 6704,1,14708956,320 Surrey Central Station,,1,2149754,307968,0,1
 6704,1,14708957,320 Surrey Central Station,,1,2152024,307966,0,1
@@ -29279,13 +29279,13 @@ route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,block_id,
 6704,1,14708977,320 Surrey Central Station,,1,2151961,307968,0,1
 6704,1,14708978,320 Surrey Central Station,,1,2151959,307968,0,1
 6704,1,14708979,320 Surrey Central Station,,1,2151986,307968,0,1
-6704,1,14708980,320 Surrey Central Station,,1,2149689,307968,0,1
+6704,1,14708980,320 Surrey Central Station,,1,2149689,307969,0,1
 6704,1,14708981,320 Surrey Central Station,,1,2152426,307968,0,1
 6704,1,14708982,320 Surrey Central Station,,1,2149771,307967,0,1
 6704,1,14708983,320 Surrey Central Station,,1,2149789,307968,0,1
 6704,1,14708984,320 Surrey Central Station,,1,2149759,307968,0,1
 6704,1,14708985,320 Surrey Central Station,,1,2149784,307966,0,1
-6704,1,14708986,320 Surrey Central Station,,1,2149685,307968,0,1
+6704,1,14708986,320 Surrey Central Station,,1,2149685,307969,0,1
 6704,1,14708987,320 Surrey Central Station,,1,2149770,307967,0,1
 6704,1,14708988,320 Surrey Central Station,,1,2151961,307968,0,1
 6704,1,14708989,320 Surrey Central Station,,1,2149769,307966,0,1
@@ -29298,7 +29298,7 @@ route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,block_id,
 6704,1,14708996,320 Surrey Central Station,,1,2149675,307968,0,1
 6704,1,14708997,320 Surrey Central Station,,1,2152024,307968,0,1
 6704,1,14708998,320 Surrey Central Station,,1,2149768,307966,0,1
-6704,1,14708999,320 Surrey Central Station,,1,2152010,307968,0,1
+6704,1,14708999,320 Surrey Central Station,,1,2152010,307969,0,1
 6704,1,14709000,320 Surrey Central Station,,1,2149768,307966,0,1
 6704,1,14709001,320 Surrey Central Station,,1,2149774,307968,0,1
 6704,1,14709002,320 Surrey Central Station,,1,2149768,307966,0,1
@@ -29317,7 +29317,7 @@ route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,block_id,
 6704,1,14709015,320 Surrey Central Station,,1,2151984,307968,0,1
 6704,1,14709016,320 Surrey Central Station,,1,2149770,307966,0,1
 6704,1,14709017,320 Surrey Central Station,,1,2149787,307966,0,1
-6704,1,14709018,320 Surrey Central Station,,1,2149675,307966,0,1
+6704,1,14709018,320 Surrey Central Station,,1,2149675,307967,0,1
 6704,1,14709019,320 Surrey Central Station,,1,2149759,307966,0,1
 6704,1,14709020,320 Surrey Central Station,,1,2152420,307966,0,1
 6704,1,14709021,320 Surrey Central Station,,1,2149759,307968,0,1
