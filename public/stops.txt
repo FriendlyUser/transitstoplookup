@@ -635,7 +635,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 11048,61111,Westbound E 33 Ave @ Nanaimo St,,49.239843,-123.059192,BUS ZN,,0,,1
 11049,61101,Eastbound E 33 Ave @ Ontario St,,49.240505,-123.104966,BUS ZN,,0,,1
 1105,51096,Southbound Arbutus St @ W 16 Ave,,49.256894,-123.153045,BUS ZN,,0,,1
-11050,61113,Westbound E 33 Ave @ Fleming St,,49.240204,-123.071802,BUS ZN,,0,,1
 11051,61109,Eastbound E 33 Ave @ Nanaimo St,,49.239712,-123.058302,BUS ZN,,0,,1
 11052,61107,Eastbound E 33 Ave @ Argyle St,,49.240064,-123.070849,BUS ZN,,0,,1
 11057,61117,Westbound E 33 Ave @ Prince Edward St,,49.240485,-123.097295,BUS ZN,,0,,1
@@ -1201,7 +1200,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 11810,61714,Carvolth Exchange @ Bay 6,,49.159698,-122.660586,BUS ZN,,0,,1
 11811,61715,Carvolth Exchange @ Bay 7,,49.15953,-122.660673,BUS ZN,,0,,1
 11813,61684,Westbound Great Northern Way @ Thornton St,,49.266906,-123.09471,BUS ZN,,0,,1
-11815,57090,Eastbound Fraser Hwy @ 176 St,,49.13705,-122.732747,BUS ZN,,0,,1
 11816,61723,Northbound 200 St @ 84 Ave,,49.156153,-122.667754,BUS ZN,,0,,1
 11817,55350,Westbound Fraser Hwy @ 176 St,,49.139025,-122.736472,BUS ZN,,0,,1
 11818,61724,Southbound 200 St @ 84 Ave,,49.155167,-122.668315,BUS ZN,,0,,1
@@ -2124,6 +2122,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 13047,61686,Westbound 104 Ave @ 168 St,,49.19169,-122.757052,BUS ZN,,0,,1
 13051,62011,Northbound Douglas Rd @ Still Creek Ave,,49.260679,-122.984385,BUS ZN,,0,,1
 13052,62012,Eastbound Fraser Hwy @ 140 St,,49.1794,-122.836332,BUS ZN,,0,,1
+13055,62014,Eastbound Fraser Hwy @ 176 St,,49.138911,-122.736915,BUS ZN,,0,,1
 13056,62018,Westbound Fraser Hwy @ 64 Ave,,49.118766,-122.690775,BUS ZN,,0,,1
 13057,60682,Southbound Willowbrook Connector @ 66A Ave,,49.122691,-122.649148,BUS ZN,,0,,1
 13058,62021,Westbound Fraser Hwy @ 68 Ave,,49.127101,-122.708622,BUS ZN,,0,,1
@@ -2166,6 +2165,8 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 13102,62096,Eastbound Keefer St @ Quebec St,,49.279168,-123.102858,BUS ZN,,0,,2
 13103,62054,Northbound 4th Ave @ Broadway St,,49.127584,-123.187115,BUS ZN,,0,,1
 13104,62055,Southbound 4th Ave @ Richmond St,,49.12819,-123.187295,BUS ZN,,0,,1
+13105,62030,Westbound E 33 Ave @ Argyle St,,49.240196,-123.070533,BUS ZN,,0,,1
+13106,61916,Eastbound W 4th Ave @ Alma St,,49.268542,-123.186256,BUS ZN,,0,,1
 1311,51300,Southbound Knight St @ E 31 Ave,,49.242149,-123.076486,BUS ZN,,0,,2
 1312,51301,Southbound Knight St @ E 33 Ave,,49.23988,-123.07656,BUS ZN,,0,,1
 1314,51303,Southbound Knight St @ E 37 Ave,,49.236514,-123.07705,BUS ZN,,0,,1
@@ -2697,6 +2698,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 198,50198,Westbound W 41 Ave @ Granville St,,49.234391,-123.139167,BUS ZN,,0,,1
 1980,51963,Eastbound W 49 Ave @ Oak St,,49.22645,-123.12776,BUS ZN,,0,,1
 1985,51968,Eastbound W 49 Ave @ Alberta St,,49.225896,-123.112498,BUS ZN,,0,,1
+1987,51970,Eastbound E 49 Ave @ Quebec St,,49.225636,-123.103335,BUS ZN,,0,,1
 1988,51971,Eastbound E 49 Ave @ Main St,,49.225593,-123.101045,BUS ZN,,0,,1
 1989,51972,Eastbound E 49 Ave @ Prince Edward St,,49.225514,-123.097041,BUS ZN,,0,,1
 199,50199,Eastbound W 41 Ave @ Granville St,,49.23422,-123.138484,BUS ZN,,0,,1
@@ -4711,7 +4713,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 4507,54457,Eastbound E 15 St @ St. Georges Ave,,49.321969,-123.0688,BUS ZN,,0,,1
 4508,54458,Eastbound E 15 St @ St. Andrews Ave,,49.321934,-123.065414,BUS ZN,,0,,1
 4509,54459,Eastbound E 15 St @ Ridgeway Ave,,49.3219,-123.062698,BUS ZN,,0,,1
-4510,54460,Eastbound E 15 St @ Moody Ave,,49.321869,-123.059574,BUS ZN,,0,,1
 4511,54461,Westbound E 15 St @ Moody Ave,,49.321997,-123.060368,BUS ZN,,0,,1
 4512,54462,Westbound E 15 St @ Ridgeway Ave,,49.322028,-123.063435,BUS ZN,,0,,1
 4513,54463,Westbound E 15 St @ St. Andrews Ave,,49.322074,-123.066504,BUS ZN,,0,,1
@@ -6225,6 +6226,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 6197,56138,Westbound Thrift Ave @ Johnston Rd,,49.027624,-122.802635,BUS ZN,,0,,1
 6198,56139,Westbound Thrift Ave @ Foster St,,49.027648,-122.804416,BUS ZN,,0,,1
 6199,56140,Westbound Thrift Ave @ Blackwood St,,49.027654,-122.80721,BUS ZN,,0,,1
+62,50062,Northbound Macdonald St @ W 5th Ave,,49.267795,-123.16824,BUS ZN,,0,,2
 6200,61427,Northbound Oxford St @ Goggs Ave,,49.028478,-122.812092,BUS ZN,,0,,1
 6201,56142,Northbound Oxford St @ Russell Ave,,49.029756,-122.812115,BUS ZN,,0,,1
 6202,56143,Westbound 16 Ave @ 146 St,,49.031228,-122.816025,BUS ZN,,0,,1
