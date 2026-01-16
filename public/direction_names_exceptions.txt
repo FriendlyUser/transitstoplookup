@@ -1,6 +1,6 @@
 ﻿route_name,direction_id,direction_name,direction_do
 2,0,Burrard Station,0
-2,1,Macdonald,1
+2,1,Dunbar Loop/Macdonald-16th Ave,1
 3,0,Waterfront Station,0
 3,1,Main-Marine Drive Station,1
 4,0,Downtown/Powell,0
@@ -11,12 +11,12 @@
 6,1,Davie,1
 7,0,Nanaimo Station,0
 7,1,Dunbar,1
-8,0,Fraser,0
+8,0,Fraser/SE Marine Dr,0
 8,1,Waterfront Station,1
 9,0,Commercial-Broadway Station/Boundary,0
-9,1,Alma,1
+9,1,Granville/Alma/UBC,1
 10,0,Waterfront Station,0
-10,1,Granville,1
+10,1,Granville/Marine Dr Station,1
 14,0,Downtown/Hastings,0
 14,1,UBC,1
 15,0,Olympic Village Station,0
@@ -27,8 +27,8 @@
 17,1,Oak,1
 19,0,Metrotown Station,0
 19,1,Stanley Park,1
-20,0,Downtown,0
-20,1,Victoria,1
+20,0,Downtown/Victoria to 41st Ave,0
+20,1,Victoria/ Victoria to 41st Ave/Victoria to 54th Ave,1
 22,0,Knight,0
 22,1,Downtown,1
 23,0,Main Street Station,0
@@ -38,9 +38,9 @@
 26,0,Joyce Station,0
 26,1,29th Ave Station,1
 27,0,Kootenay Loop,0
-27,1,Joyce Station,1
-28,0,Phibbs Exchange,0
-28,1,Joyce Station,1
+27,1,Joyce Station/To Kingsway,1
+28,0,Phibbs Exchange/Kootenay Loop,0
+28,1,Joyce Station/Kootenay Loop,1
 29,0,29th Ave Station,0
 29,1,Elliott,1
 31,0,Metrotown Station,0
@@ -49,26 +49,26 @@
 32,1,Dunbar,1
 33,0,29th Ave Station,0
 33,1,UBC,1
-41,0,Joyce Station,0
-41,1,Crown,1
+41,0,Joyce Station/To Granville St,0
+41,1,Crown/To Granville St/Oak St,1
 42,0,Alma,0
 42,1,Spanish Banks,1
-44,0,Downtown,0
+44,0,Downtown/Dundrave Express,0
 44,1,UBC,1
 49,0,Metrotown Station,0
 49,1,UBC,1
 50,0,Waterfront Station,0
-50,1,False Creek/Granville Island,1
+50,1,False Creek South,1
 68,0,UBC Exchange,0
 68,1,Wesbrook Village,1
 80,0,River District,0
 80,1,Marine Drive Station,1
 84,0,VCC-Clark Station,0
 84,1,UBC,1
-99,0,Commercial-Broadway Station B-Line,0
+99,0,Commercial-Broadway Station B-Line/To Boundary B-Line,0
 99,1,UBC B-Line,1
-100,0,22nd St Station,0
-100,1,Marpole,1
+100,0,22nd St Station/22nd St Station via Trapp,0
+100,1,Marpole/Marpole via Trapp,1
 101,0,Lougheed Station,0
 101,1,22nd St Station,1
 102,0,Victoria Hill,0
@@ -157,7 +157,7 @@
 179,1,Coquitlam Central Station,1
 180,0,Moody Centre Station,0
 180,1,Lougheed Station,1
-181,0,Ioco,0
+181,0,Ioco/Belcarra,0
 181,1,Moody Centre Station,1
 182,0,Belcarra,0
 182,1,Moody Centre Station,1
@@ -178,9 +178,9 @@
 191,0,Princeton,0
 191,1,Coquitlam Central Station,1
 209,0,Upper Lynn Valley,0
-209,1,Burrard Station,1
+209,1,Phibbs Exchange/Burrard Station,1
 210,0,Upper Lynn Valley,0
-210,1,Burrard Station,1
+210,1,Phibbs Exchange/Burrard Station,1
 211,0,Seymour,0
 211,1,Phibbs Exchange/Burrard Station,1
 212,0,Deep Cove,0
@@ -193,7 +193,7 @@
 222,1,Metrotown Station,1
 226,0,Lynn Canyon Park,0
 226,1,Lynn Valley,1
-227,0,Lynn Valley Centre Via Lynn Canyon Park,0
+227,0,Lynn Valley,0
 227,1,Phibbs Exchange,1
 228,0,Lynn Valley,0
 228,1,Lonsdale Quay,1
@@ -262,7 +262,7 @@
 320,0,Fleetwood/Langley Centre,0
 320,1,Surrey Central Station,1
 321,0,Surrey Central Station,0
-321,1,White Rock Centre,1
+321,1,Newton Exchange/White Rock Centre/White Rock South,1
 322,0,Newton Exchange,0
 322,1,Scottsdale,1
 323,0,Surrey Central Station,0
@@ -278,7 +278,7 @@
 335,0,Newton Exchange,0
 335,1,Surrey Central Station,1
 337,0,Fraser Heights,0
-337,1,Surrey Central Station,1
+337,1,Guildford/Surrey Central Station,1
 338,0,East Fraser Heights,0
 338,1,Guildford,1
 340,0,Scottsdale,0
@@ -384,7 +384,7 @@
 595,0,Maple Meadows Station,0
 595,1,Langley Centre,1
 601,0,Bridgeport Station,0
-601,1,South Delta,1
+601,1,South Delta/Boundary Bay/Ladner Exchange/South Delta Exchange,1
 602,0,Bridgeport Station,0
 602,1,Tsawwassen Heights,1
 603,0,South Delta Exchange/Bridgeport Station,0
