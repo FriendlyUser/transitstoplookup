@@ -6061,13 +6061,13 @@ route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,block_id,
 6625,1,14835053,20 Victoria/To SE Marine Dr,,1,2159870,309930,0,1
 6625,1,14835054,20 Victoria/to 54th Ave,,1,2159875,309931,0,1
 6625,1,14835055,20 Victoria/to 54th Ave,,1,2159879,309931,0,1
-6625,152201,14835056,20 Victoria,,1,2159879,309926,0,1
+6625,152201,14835056,20 Victoria/To SE Marine Dr,,1,2159879,309926,0,1
 6625,1,14835057,20 Victoria/To SE Marine Dr,,1,2159872,309924,0,1
 6625,1,14835058,20 Victoria/To SE Marine Dr,,1,2159879,309924,0,1
 6625,1,14835059,20 Victoria/To SE Marine Dr,,1,2159878,309924,0,1
 6625,1,14835060,20 Victoria/To SE Marine Dr,,1,2159872,309930,0,1
 6625,1,14835061,20 Victoria/To SE Marine Dr,,1,2159874,309924,0,1
-6625,152201,14835062,20 Victoria,,1,2159871,309926,0,1
+6625,152201,14835062,20 Victoria/To SE Marine Dr,,1,2159871,309926,0,1
 6625,1,14835063,20 Victoria/To SE Marine Dr,,1,2159876,309924,0,1
 6625,1,14835064,20 Victoria/To SE Marine Dr,,1,2159878,309924,0,1
 6625,1,14835065,20 Victoria/To SE Marine Dr,,1,2159878,309924,0,1
@@ -6077,7 +6077,7 @@ route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,block_id,
 6625,152201,14835069,20 Victoria/To SE Marine Dr,,1,2159877,309924,0,1
 6625,1,14835070,20 Victoria/To SE Marine Dr,,1,2159870,309924,0,1
 6625,1,14835071,20 Victoria/To SE Marine Dr,,1,2159871,309924,0,1
-6625,152201,14835072,20 Victoria,,1,2159874,309926,0,1
+6625,152201,14835072,20 Victoria/To SE Marine Dr,,1,2159874,309926,0,1
 6625,152201,14835073,20 Victoria/To SE Marine Dr,,1,2159870,309924,0,1
 6625,1,14835074,20 Victoria/To SE Marine Dr,,1,2159871,309924,0,1
 6625,1,14835075,20 Victoria/To SE Marine Dr,,1,2159878,309924,0,1
@@ -53455,9 +53455,9 @@ route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,block_id,
 6658,1,14900917,145 Production Station,,1,2163973,310132,0,1
 6658,1,14900918,145 Production Station,,1,2163977,310132,0,1
 6822,1,14900920,310 Ladner ,,1,2161464,310409,0,1
-6619,3,14901317,9 To Main,,0,2164484,309787,0,1
+6619,3,14901317,9 Broadway/To Main St,,0,2164484,309787,0,1
 6619,3,14901318,9 Broadway/To Boundary Loop,,0,2164485,309788,0,1
-6619,3,14901319,9 To Main,,0,2164486,309787,0,1
+6619,3,14901319,9 Broadway/To Main St,,0,2164486,309787,0,1
 6619,3,14901320,9 Broadway/To Boundary Loop,,0,2164487,309795,0,1
 6619,3,14901321,9 Broadway/To Boundary Loop,,0,2164484,309795,0,1
 6619,3,14901322,9 Broadway/To Boundary Loop,,0,2164486,309795,0,1
@@ -53636,11 +53636,11 @@ route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,block_id,
 6619,3,14901495,9 Broadway/To Alma St,,1,2164485,309802,0,1
 6619,3,14901496,9 Broadway/To Alma St,,1,2164487,309802,0,1
 6619,3,14901497,9 Broadway/To Alma St,,1,2164484,309802,0,1
-6619,3,14901498,9 Alma,,1,2164492,309810,0,1
+6619,3,14901498,9 Broadway/To Alma St,,1,2164492,309810,0,1
 6619,3,14901499,9 Broadway/To Alma St,,1,2164493,309802,0,1
 6619,3,14901500,9 Broadway/To Alma St,,1,2164490,309802,0,1
 6619,3,14901501,9 Broadway/To Alma St,,1,2164485,309802,0,1
-6619,3,14901502,9 Alma,,1,2164487,309810,0,1
+6619,3,14901502,9 Broadway/To Alma St,,1,2164487,309810,0,1
 6619,3,14901503,9 Broadway/To Alma St,,1,2164484,309802,0,1
 6619,3,14901504,9 Broadway/To Alma St,,1,2164492,309802,0,1
 6619,3,14901505,9 Broadway/To Alma St,,1,2164493,309802,0,1
@@ -54051,11 +54051,11 @@ route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,block_id,
 6619,1,14901910,9 Broadway/To UBC Exchange,,1,2164531,309801,0,1
 6619,1,14901911,9 Broadway/To Granville St,,1,2164522,309804,0,1
 6619,1,14901912,9 Broadway/To Alma St,,1,2164534,309802,0,1
-6619,1,14901913,9 Alma,,1,2164538,309810,0,1
+6619,1,14901913,9 Broadway/To Alma St,,1,2164538,309810,0,1
 6619,1,14901914,9 Broadway/To Granville St,,1,2164540,309800,0,1
 6619,1,14901915,9 Broadway/To Alma St,,1,2164535,309802,0,1
 6619,1,14901916,9 Broadway/To Alma St,,1,2164536,309802,0,1
-6619,1,14901917,9 Alma,,1,2164521,309810,0,1
+6619,1,14901917,9 Broadway/To Alma St,,1,2164521,309810,0,1
 6619,1,14901918,9 Broadway/To Alma St,,1,2164543,309802,0,1
 6619,1,14901919,9 Broadway/To Alma St,,1,2164539,309802,0,1
 6619,1,14901920,9 Broadway/To Alma St,,1,2164544,309802,0,1
@@ -56930,7 +56930,7 @@ route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,block_id,
 30052,1,15061801,Millennium Line To Lafarge Lake-Douglas,,0,2175281,310852,0,1
 30052,1,15061802,Millennium Line To Lafarge Lake-Douglas,,0,2175282,310852,0,1
 30052,1,15061803,Millennium Line To Lafarge Lake-Douglas,,0,2175283,310853,0,1
-30052,1,15061804,Millennium Line To Lafarge Lake-Douglas,,0,2175284,310852,0,1
+30052,1,15061804,Millennium Line To Lafarge Lake-Douglas,,0,2176649,310852,0,1
 30052,1,15061805,Millennium Line To Lafarge Lake-Douglas,,0,2175285,310852,0,1
 30052,1,15061806,Millennium Line To Lafarge Lake-Douglas,,0,2175286,310852,0,1
 30052,1,15061807,Millennium Line To Lafarge Lake-Douglas,,0,2175287,310853,0,1
@@ -57237,7 +57237,7 @@ route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,block_id,
 30052,1,15062108,Millennium Line To VCC-Clark,,1,2175278,310859,0,1
 30052,1,15062109,Millennium Line To VCC-Clark,,1,2175279,310859,0,1
 30052,1,15062110,Millennium Line To VCC-Clark,,1,2175281,310859,0,1
-30052,1,15062111,Millennium Line To VCC-Clark,,1,2175284,310859,0,1
+30052,1,15062111,Millennium Line To VCC-Clark,,1,2176649,310859,0,1
 30052,1,15062112,Millennium Line To VCC-Clark,,1,2175285,310859,0,1
 30052,1,15062113,Millennium Line To VCC-Clark,,1,2175280,310859,0,1
 30052,1,15062114,Millennium Line To VCC-Clark,,1,2175282,310859,0,1
