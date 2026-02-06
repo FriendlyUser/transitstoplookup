@@ -621,6 +621,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 11032,59160,Southbound 240 St @ McClure Dr,,49.196694,-122.556844,BUS ZN,,0,,1
 11034,59206,Westbound 104 Ave @ 244 St,,49.191378,-122.548252,BUS ZN,,0,,2
 11035,59207,Eastbound 104 Ave @ 244 St,,49.191251,-122.547082,BUS ZN,,0,,1
+11036,51924,NW Marine Dr @ University Blvd,,49.262988,-123.258481,BUS ZN,,0,,1
 11038,61091,Eastbound W 16 Ave @ Trafalgar St,,49.257427,-123.16452,BUS ZN,,0,,1
 11039,61089,Eastbound W 16 Ave @ Blenheim St,,49.257689,-123.178434,BUS ZN,,0,,1
 11040,61122,Westbound W 16 Ave @ Heather St,,49.257062,-123.120455,BUS ZN,,0,,1
@@ -1067,14 +1068,12 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 11627,61570,Westbound Nordel Way @ Shepherd Way,,49.161565,-122.918523,BUS ZN,,0,,1
 11628,61568,Eastbound Nordel Way @ Brooke Rd,,49.160605,-122.920855,BUS ZN,,0,,1
 11629,61569,Westbound Nordel Way @ Brooke Rd,,49.160274,-122.922146,BUS ZN,,0,,1
-1163,51154,Eastbound Kingsway @ Melbourne St,,49.231961,-123.028846,BUS ZN,,0,,1
 11630,61571,Eastbound Nordel Way @ Shepherd Way,,49.161813,-122.914927,BUS ZN,,0,,1
 11632,50156,Westbound E 41 Ave @ Main St,,49.233207,-123.102082,BUS ZN,,0,,1
 11636,58235,Southbound Abbott St @ W Pender St,,49.28074,-123.107725,BUS ZN,,0,,1
 11637,52441,Northbound 6th St @ 4th Ave,,49.210454,-122.9168,BUS ZN,,0,,1
 11638,50094,Westbound W Pender St @ Hamilton St,,49.282472,-123.11137,BUS ZN,,0,,1
 11639,61510,Northbound Capilano Rd @ Curling Rd,,49.325441,-123.121059,BUS ZN,,0,,2
-1164,51155,Eastbound Kingsway @ Lincoln St,,49.232088,-123.026055,BUS ZN,,0,,1
 11641,59990,Northbound Capilano Rd @ Fullerton Ave,,49.326787,-123.119438,BUS ZN,,0,,1
 11642,53636,Eastbound United Blvd @ Brigantine Dr,,49.22879,-122.847955,BUS ZN,,0,,1
 11643,51473,Westbound W Pender St @ Broughton St,,49.289741,-123.12775,BUS ZN,,0,,1
@@ -1209,7 +1208,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 11827,58779,Southbound Ioco Rd @ Newport Dr,,49.282924,-122.828278,BUS ZN,,0,,1
 11828,61732,Eastbound 56 Ave @ 128 St,,49.104457,-122.868058,BUS ZN,,0,,1
 11829,60562,Northbound N Boundary Rd @ Trinity St,,49.289497,-123.023179,BUS ZN,,0,,1
-1183,51174,Westbound Kingsway @ Melbourne St,,49.232118,-123.029643,BUS ZN,,0,,1
 11831,61755,Westbound 56 Ave @ 128 St,,49.104514,-122.867495,BUS ZN,,0,,1
 11839,61643,Northbound 192 St @ 28 Ave,,49.053205,-122.691408,BUS ZN,,0,,1
 11840,61437,Eastbound Westminster Hwy @ Kartner Rd,,49.169851,-123.035007,BUS ZN,,0,,1
@@ -1282,7 +1280,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 11932,61811,Southbound No. 5 Rd @ Steveston Hwy,,49.134132,-123.092199,BUS ZN,,0,,1
 11933,61758,Southbound 168 St @ 96 Ave,,49.176639,-122.756708,BUS ZN,,0,,1
 11934,61852,Westbound 122 Ave @ 191B St,,49.224405,-122.691016,BUS ZN,,0,,2
-1194,51185,Westbound Kingsway @ Spencer St,,49.235933,-123.041047,BUS ZN,,0,,1
 11940,61892,Moody Centre Station @ Bay 5,,49.277828,-122.846536,BUS ZN,,0,,1
 11941,61891,Moody Centre Station @ Bay 6,,49.277828,-122.84682,BUS ZN,,0,,1
 11942,61890,Moody Centre Station @ Bay 7,,49.27783,-122.847102,BUS ZN,,0,,1
@@ -1350,8 +1347,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 12008,61832,Southbound East Mall @ Eagles Dr,,49.258079,-123.24443,BUS ZN,,0,,2
 12009,61894,Eastbound Ross Dr @ Birney Ave,,49.251615,-123.237747,BUS ZN,,0,,2
 1201,51192,Westbound Kingsway @ Dumfries St,,49.248894,-123.072897,BUS ZN,,0,,1
-12010,61424,Southbound West Mall @ NW Marine Dr,,49.268113,-123.258499,BUS ZN,,0,,1
-12011,61896,Southbound Lower Mall @ University Blvd,,49.263228,-123.256272,BUS ZN,,0,,1
 12012,61893,Westbound Ross Dr @ Birney Ave,,49.251694,-123.237733,BUS ZN,,0,,1
 12013,61833,Northbound East Mall @ Eagles Dr,,49.25836,-123.244207,BUS ZN,,0,,1
 12015,61897,Westbound River Rd @ 6100 Block,,49.172878,-123.154608,BUS ZN,,0,,1
@@ -1457,7 +1452,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 12163,59427,Northbound 27 St @ Marine Dr,,49.336316,-123.188802,BUS ZN,,0,,2
 12167,52482,Westbound Ovens Ave @ Colborne St,,49.221993,-122.915253,BUS ZN,,0,,1
 12168,60745,Dunbar Loop @ Bay 3,,49.234673,-123.186318,BUS ZN,,0,,1
-12169,59587,Northbound Lower Mall @ University Blvd,,49.263181,-123.256083,BUS ZN,,0,,1
 1217,51208,Northbound Victoria Dr @ E 51 Ave,,49.223425,-123.065653,BUS ZN,,0,,1
 12172,59419,Westbound Cook Rd @ Pimlico Way,,49.16652,-123.126401,BUS ZN,,0,,1
 12173,59863,Langley Centre @ Bay 7,,49.107179,-122.655848,BUS ZN,,0,,1
@@ -1645,7 +1639,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 12389,58897,Northbound 160 St @ 30 Ave,,49.056772,-122.779095,BUS ZN,,0,,1
 12390,58940,Westbound 32 Ave @ 160 St,,49.060162,-122.779779,BUS ZN,,0,,1
 12391,59104,Westbound 32 Ave @ 156A St,,49.060184,-122.790767,BUS ZN,,0,,1
-12392,60209,Westbound Elmbridge Way @ Gilbert Rd,,49.172828,-123.147179,BUS ZN,,0,,1
+12392,60209,Westbound Elmbridge Way @ Gilbert Rd,,49.172872,-123.147329,BUS ZN,,0,,1
 12393,60208,29th Avenue Station @ Bay 4,,49.244435,-123.044461,BUS ZN,,0,,1
 12394,59119,Westbound 32 Ave @ 154 St,,49.060927,-122.797554,BUS ZN,,0,,1
 12395,59178,Eastbound 32 Ave @ 152 St,,49.061485,-122.800444,BUS ZN,,0,,1
@@ -1943,7 +1937,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 12818,60554,Eastbound E 2nd Ave @ Lorne St,,49.268312,-123.099412,BUS ZN,,0,,1
 12819,60553,Eastbound W 6th Ave @ Alder St,,49.26601,-123.130869,BUS ZN,,0,,1
 12821,61785,Westbound Westminster Hwy @ No. 8 Rd,,49.169942,-123.023565,BUS ZN,,0,,1
-12822,60579,Westbound E Broadway @ Quebec St,,49.263095,-123.104676,BUS ZN,,0,,1
+12822,60579,Westbound E Broadway @ Ontario St,,49.263095,-123.104676,BUS ZN,,0,,1
 12823,60577,Westbound W Georgia St @ Richards St,,49.281141,-123.115843,BUS ZN,,0,,1
 12826,60586,Westbound Hastings St @ Willingdon Ave-,,49.281121,-123.003852,BUS ZN,,0,,1
 12827,60587,Westbound Hastings St @ Willingdon Ave,,49.281129,-123.002663,BUS ZN,,0,,1
@@ -2173,6 +2167,13 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 1312,51301,Southbound Knight St @ E 33 Ave,,49.23988,-123.07656,BUS ZN,,0,,1
 13120,62127,Westbound Moncton St @ Easthope Ave,,49.125244,-123.179717,BUS ZN,,0,,1
 13121,59862,Westbound E Broadway @ Brunswick St,,49.262916,-123.097845,BUS ZN,,0,,1
+13122,62130,Westbound E Hastings St @ Commercial Dr,,49.281346,-123.069775,BUS ZN,,0,,1
+13124,62009,Eastbound Kingsway @ Aberdeen St,,49.232011,-123.027587,BUS ZN,,0,,1
+13125,62008,Westbound Kingsway @ Aberdeen St,,49.232179,-123.028643,BUS ZN,,0,,1
+13126,62128,Westbound W Pender St @ Howe St,,49.285239,-123.115602,BUS ZN,,0,,1
+13127,62129,Eastbound E Cordova St @ Columbia St,,49.282264,-123.101644,BUS ZN,,0,,1
+13128,51920,Westbound NW Marine Dr @ West Mall,,49.268916,-123.258632,BUS ZN,,0,,2
+13129,51921,Southbound NW Marine Dr @ University Blvd,,49.262899,-123.258633,BUS ZN,,0,,2
 1314,51303,Southbound Knight St @ E 37 Ave,,49.236514,-123.07705,BUS ZN,,0,,1
 1315,51304,Southbound Knight St @ E 39 Ave,,49.234472,-123.077104,BUS ZN,,0,,2
 1316,51305,Southbound Knight St @ E 41 Ave,,49.232305,-123.077224,BUS ZN,,0,,1
@@ -2237,8 +2238,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 1378,51367,Westbound E Pender St @ Gore Ave,,49.280427,-123.097706,BUS ZN,,0,,1
 1379,51368,Southbound Macdonald St @ W 4th Ave,,49.268064,-123.168411,BUS ZN,,0,,1
 1382,51370,Eastbound W Pender St @ Nicola St,,49.289898,-123.128771,BUS ZN,,0,,1
-1383,51371,Eastbound W Pender St @ Broughton St,,49.289364,-123.127117,BUS ZN,,0,,1
-1385,51373,Eastbound W Pender St @ Bute St,,49.288213,-123.123062,BUS ZN,,0,,1
 1387,58143,Kootenay Loop @ Bay 8,,49.281026,-123.024952,BUS ZN,,0,,1
 1389,51377,Eastbound Hastings St @ Ingleton Ave,,49.280991,-123.018168,BUS ZN,,0,,1
 139,50139,Eastbound W 41 Ave @ Manitoba St,,49.233142,-123.107725,BUS ZN,,0,,1
@@ -2329,7 +2328,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 1480,51468,Westbound Hastings St @ Ingleton Ave,,49.281179,-123.01911,BUS ZN,,0,,1
 1481,51469,Westbound Hastings St @ Esmond Ave,,49.281222,-123.021845,BUS ZN,,0,,1
 1482,51470,Kootenay Loop @ Bay 6,,49.281212,-123.026407,BUS ZN,,0,,1
-1483,51471,Westbound W Pender St @ Thurlow St,,49.287731,-123.120865,BUS ZN,,0,,1
 1484,51472,Westbound W Pender St @ Bute St,,49.288565,-123.123694,BUS ZN,,0,,1
 1487,51475,Westbound W Georgia St @ Denman St,,49.292951,-123.134018,BUS ZN,,0,,1
 1491,51479,Southbound Wesbrook Mall @ Agronomy Rd,,49.264,-123.243748,BUS ZN,,0,,1
@@ -2584,7 +2582,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 1794,51780,Southbound Smith Ave @ Spruce St,,49.24677,-123.019897,BUS ZN,,0,,1
 1798,51784,Southbound Boundary Rd @ Burke St,,49.236626,-123.023676,BUS ZN,,0,,1
 1799,51785,Westbound Vanness Ave @ Boundary Rd,,49.234751,-123.024219,BUS ZN,,0,,1
-180,50180,Northbound Main St @ Industrial Ave,,49.270803,-123.100432,BUS ZN,,0,,1
 1800,51786,Westbound Vanness Ave @ Melbourne St,,49.236726,-123.028401,BUS ZN,,0,,2
 1801,51787,Joyce Station @ Bay 4,,49.237907,-123.031047,BUS ZN,,0,,1
 1808,51794,Westbound SE Marine Dr @ Matheson Cres,,49.208224,-123.031482,BUS ZN,,0,,1
@@ -4059,7 +4056,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 3722,53683,Eastbound Kebet Way @ Kingsway Ave,,49.244643,-122.745787,BUS ZN,,0,,2
 3723,53684,Westbound Kingsway Ave @ Mary Hill Bypass,,49.247446,-122.749616,BUS ZN,,0,,1
 3724,53685,Westbound Kingsway Ave @ Coast Meridian Rd,,49.249677,-122.754883,BUS ZN,,0,,1
-3727,53688,Southbound Reeve St @ Riverside Secondary,,49.256547,-122.788193,BUS ZN,,0,,1
+3727,53688,Southbound Reeve St @ Riverside Secondary,,49.256516,-122.788197,BUS ZN,,0,,1
 3728,53689,Southbound Mary Hill Rd @ Wilson Ave,,49.260338,-122.778638,BUS ZN,,0,,1
 3729,53690,Southbound Mary Hill Rd @ Welcher Ave,,49.257627,-122.778646,BUS ZN,,0,,1
 373,50369,Southbound Dunbar St @ W 31 Ave,,49.243962,-123.185351,BUS ZN,,0,,1
@@ -5118,7 +5115,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 497,50493,Westbound Dundas St @ N Garden Dr,,49.284885,-123.057411,BUS ZN,,0,,1
 4971,54919,Southbound Scott Rd @ 99 Ave,,49.181778,-122.890406,BUS ZN,,0,,1
 4972,54920,Westbound 96 Ave @ Scott Rd,,49.177231,-122.890965,BUS ZN,,0,,1
-4973,54921,Westbound 96 Ave @ 117B St,,49.177194,-122.896846,BUS ZN,,0,,1
 4974,54922,Westbound 96 Ave @ 116 St,,49.177186,-122.901673,BUS ZN,,0,,1
 4975,54923,Southbound 114 St @ 95A Ave,,49.176531,-122.906879,BUS ZN,,0,,1
 4976,54924,Southbound 114 St @ Dawson Cres,,49.173425,-122.906874,BUS ZN,,0,,1
@@ -5192,6 +5188,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 5056,55004,Westbound 96 Ave @ 126 St,,49.177262,-122.874198,BUS ZN,,0,,1
 5058,55006,Westbound 96 Ave @ 122 St,,49.177234,-122.885246,BUS ZN,,0,,1
 5059,55007,Southbound 124 St @ 96 Ave,,49.176738,-122.879336,BUS ZN,,0,,1
+506,50502,Westbound E Hastings St @ Glen Dr,,49.281111,-123.081789,BUS ZN,,0,,1
 5060,55008,Southbound 124 St @ 95 Ave,,49.175188,-122.879321,BUS ZN,,0,,1
 5061,55009,Southbound 124 St @ Iona Place,,49.17346,-122.879333,BUS ZN,,0,,1
 5062,55010,Southbound 124 St @ 93 Ave,,49.171566,-122.879346,BUS ZN,,0,,2
@@ -5761,7 +5758,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 5709,55654,Northbound 132 St @ 78A Ave,,49.14559,-122.856673,BUS ZN,,0,,1
 571,50566,Westbound W Broadway @ Balaclava St,,49.264241,-123.174408,BUS ZN,,0,,1
 5710,55655,Northbound 132 St @ 80 Ave,,49.148507,-122.856704,BUS ZN,,0,,1
-5711,55656,Northbound 132 St @ 81A Ave,,49.151125,-122.856702,BUS ZN,,0,,1
 5713,55658,Northbound 132 St @ 84 Ave,,49.155731,-122.856726,BUS ZN,,0,,2
 5714,55659,Northbound 132 St @ Shakespeare Place,,49.160706,-122.856787,BUS ZN,,0,,1
 5715,55660,Northbound 132 St @ 88 Ave,,49.163009,-122.856776,BUS ZN,,0,,1
@@ -5986,7 +5982,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 5931,55875,Southbound 144 St @ 77A Ave,,49.142924,-122.82348,BUS ZN,,0,,1
 5932,59084,Southbound 144 St @ 76 Ave,,49.140557,-122.823514,BUS ZN,,0,,1
 5933,55877,Southbound 144 St @ 74A Ave,,49.137874,-122.823467,BUS ZN,,0,,1
-5934,55878,Southbound 144 St @ 7300 Block,,49.136147,-122.823482,BUS ZN,,0,,2
+5934,55878,Southbound 144 St @ 72A Ave,,49.135249,-122.8235,BUS ZN,,0,,1
 5935,55879,Westbound 72 Ave @ 144 St,,49.13382,-122.824051,BUS ZN,,0,,1
 5936,55880,Westbound 72 Ave @ 142 St,,49.133769,-122.829433,BUS ZN,,0,,1
 5937,55881,Eastbound 72 Ave @ 140 St,,49.13356,-122.833983,BUS ZN,,0,,1
@@ -8248,7 +8244,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 9018,61436,Northbound Westwood St @ Kitchener Ave,,49.275065,-122.790344,BUS ZN,,0,,1
 9019,58660,Eastbound Fraser Hwy @ Fleetwood Way,,49.164444,-122.797527,BUS ZN,,0,,1
 902,50895,Eastbound E Broadway @ Renfrew St,,49.261812,-123.043749,BUS ZN,,0,,1
-9020,58591,Westbound Fraser Hwy @ 196A St,,49.11338,-122.67839,BUS ZN,,0,,1
+9020,58591,Westbound Fraser Hwy @ 196A St,,49.112799,-122.67703,BUS ZN,,0,,1
 9021,55390,Northbound 152 St @ King George Blvd,,49.051035,-122.801095,BUS ZN,,0,,1
 9022,55973,Northbound 152 St @ 64 Ave,,49.118315,-122.800802,BUS ZN,,0,,1
 9023,58333,Northbound 152 St @ 64 Ave,,49.119538,-122.800812,BUS ZN,,0,,1
@@ -8675,7 +8671,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 9692,59168,Eastbound Kanaka Way @ Creekside St,,49.204057,-122.566052,BUS ZN,,0,,1
 9693,59166,Eastbound Kanaka Way @ 238 St,,49.204717,-122.562229,BUS ZN,,0,,1
 9695,59162,Southbound 240 St @ 110 Ave,,49.202082,-122.55672,BUS ZN,,0,,2
-97,50097,Westbound W Pender St @ Howe St,,49.285523,-123.116055,BUS ZN,,0,,1
 9701,59202,Southbound Jackson Rd @ 103 Ave,,49.188967,-122.540852,BUS ZN,,0,,1
 9702,59200,Westbound 102 Ave @ 244 St,,49.187515,-122.546463,BUS ZN,,0,,1
 9703,59155,Westbound 102 Ave @ 243 St,,49.187532,-122.549415,BUS ZN,,0,,1
