@@ -30040,7 +30040,7 @@ route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,block_id,
 6704,2,14863565,320 Surrey Central Station,,1,2164129,310441,0,1
 6704,2,14863566,320 Surrey Central Station,,1,2161670,310439,0,1
 6704,2,14863567,320 Surrey Central Station,,1,2161668,310439,0,1
-6704,2,14863568,320 Surrey Central Station,,1,2161523,310439,0,1
+6704,2,14863568,320 Surrey Central Station,,1,2161523,310438,0,1
 6704,2,14863569,320 Surrey Central Station,,1,2161666,310439,0,1
 6704,2,14863570,320 Surrey Central Station,,1,2161668,310441,0,1
 6704,2,14863571,320 Surrey Central Station,,1,2161554,310441,0,1
@@ -32178,7 +32178,7 @@ route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,block_id,
 6709,1,14865945,326 Surrey Central Station,,1,2161646,310478,0,1
 6709,1,14865946,326 Surrey Central Station,,1,2161546,310478,0,1
 6709,1,14865947,326 Surrey Central Station,,1,2161539,310478,0,1
-6709,1,14865948,326 Surrey Central Station,,1,2161543,310478,0,1
+6709,1,14865948,326 Surrey Central Station,,1,2161543,310479,0,1
 6709,1,14865949,326 Surrey Central Station,,1,2165144,310478,0,1
 6709,1,14865950,326 Surrey Central Station,,1,2161653,310478,0,1
 6709,1,14865951,326 Surrey Central Station,,1,2161845,310478,0,1
@@ -32189,7 +32189,7 @@ route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,block_id,
 6709,1,14865956,326 Surrey Central Station,,1,2161652,310478,0,1
 6709,1,14865957,326 Surrey Central Station,,1,2161543,310478,0,1
 6709,1,14865958,326 Surrey Central Station,,1,2161903,310478,0,1
-6709,1,14865959,326 Surrey Central Station,,1,2161538,310478,0,1
+6709,1,14865959,326 Surrey Central Station,,1,2161538,310479,0,1
 6709,101,14865960,326 Surrey Central Station,,1,2161902,310478,0,1
 6709,1,14865961,326 Surrey Central Station,,1,2161539,310478,0,1
 6709,201,14865962,326 Surrey Central Station,,1,2161902,310478,0,1
@@ -62535,4 +62535,10 @@ route_id,service_id,trip_id,trip_headsign,trip_short_name,direction_id,block_id,
 6692,1,15073636,255 Park Royal Only,,1,2176200,310381,0,1
 6692,1,15073637,255 Park Royal Only,,1,2176201,310381,0,1
 6692,1,15073638,255 Park Royal Only,,1,2176202,310381,0,1
+6770,92501,15282382,West Coast Express Train To Waterfront,,1,2189814,310898,0,1
+6770,92501,15282383,West Coast Express Train To Waterfront,,1,2189815,310898,0,1
+6770,92501,15282384,West Coast Express Train To Waterfront,,1,2189816,310898,0,1
+6770,92501,15282385,West Coast Express Train To Mission,,0,2189817,310897,0,1
+6770,92501,15282386,West Coast Express Train To Mission,,0,2189818,310897,0,1
+6770,92501,15282387,West Coast Express Train To Mission,,0,2189819,310897,0,1
 HD,-999,48441,,,0,NA,4484,2,0
