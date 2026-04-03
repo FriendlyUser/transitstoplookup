@@ -274,7 +274,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 10478,59926,Eastbound National Ave @ Quebec St,,49.27487,-123.101464,BUS ZN,,0,,1
 10479,59884,Westbound Southridge Dr @ 6600 Block,,49.204888,-122.95922,BUS ZN,,0,,1
 1048,51039,Southbound Renfrew St @ Venables St,,49.276141,-123.044245,BUS ZN,,0,,1
-10480,59925,Northbound Quebec St @,,49.273368,-123.101534,BUS ZN,,0,,1
+10480,59925,Northbound Quebec St @ Terminal Ave,,49.273368,-123.101534,BUS ZN,,0,,1
 10481,51913,Westbound W 4th Ave @ Blanca St,,49.269195,-123.215565,BUS ZN,,0,,2
 10482,59927,Northbound Quebec St @ National Ave,,49.275246,-123.101804,BUS ZN,,0,,1
 10483,59885,Eastbound Southridge Dr @ 6700 Block,,49.204111,-122.956692,BUS ZN,,0,,1
@@ -863,7 +863,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 11305,61396,Southbound 232 St @ Fern Cres,,49.24101,-122.579718,BUS ZN,,0,,1
 11306,61353,Northbound 224 St @ 12200 Block,,49.225496,-122.601234,BUS ZN,,0,,1
 11307,53212,Southbound North Rd @ Cameron St,,49.252969,-122.893126,BUS ZN,,0,,1
-11308,59903,Northbound Ioco Rd @ Suter Brook Way,,49.2797,-122.82696,BUS ZN,,0,,1
 1131,51122,Eastbound E 41 Ave @ Gladstone St,,49.232817,-123.06167,BUS ZN,,0,,1
 11310,50023,Yaletown-Roundhouse Station @ Bay 1,,49.274863,-123.122521,BUS ZN,,0,,1
 11311,61215,Yaletown-Roundhouse Station @ Bay 2,,49.274278,-123.121876,BUS ZN,,0,,1
@@ -1094,7 +1093,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 11679,61610,Eastbound Como Lake Ave @ Robinson St,,49.263527,-122.880581,BUS ZN,,0,,1
 1168,51159,Eastbound Kingsway @ Patterson Ave,,49.232443,-123.012252,BUS ZN,,0,,1
 11680,61573,Westbound North Fraser Way @ 4300 Block,,49.20024,-123.005536,BUS ZN,,0,,1
-11681,61612,Southbound Howes St @ Hwy 91A Offramp,,49.187052,-122.947624,BUS ZN,,0,,1
 11682,61599,Westbound 6th Ave @ 8th St,,49.211448,-122.923688,BUS ZN,,0,,1
 11683,58244,Southbound No. 4 Rd @ Odlin Rd,,49.181509,-123.11413,BUS ZN,,0,,1
 11684,61617,Westbound United Blvd @,,49.229898,-122.856097,BUS ZN,,0,,1
@@ -2135,6 +2133,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 13081,59472,Northbound Granville St @ W 45 Ave,,49.23093,-123.139594,BUS ZN,,0,,1
 13082,59954,Eastbound Lougheed Hwy @ Gilmore Ave,,49.266023,-123.013528,BUS ZN,,0,,1
 13085,61808,Southbound Granville St @ W 45 Ave,,49.230974,-123.139847,BUS ZN,,0,,1
+13088,62057,Westbound W 49 Ave @ Columbia St,,49.225969,-123.110487,BUS ZN,,0,,1
 1309,51298,Southbound Knight St @ E 27 Ave,,49.24614,-123.076373,BUS ZN,,0,,2
 13091,61989,Westbound Pacific St @ Richards St,,49.274065,-123.127726,BUS ZN,,0,,1
 13093,53698,Eastbound Kingsway Ave @ McLean Ave,,49.253922,-122.765061,BUS ZN,,0,,2
@@ -2154,8 +2153,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 13109,62113,Northbound Gilbert Rd @ Westminster Hwy,,49.16991,-123.147533,BUS ZN,,0,,1
 1311,51300,Southbound Knight St @ E 31 Ave,,49.242149,-123.076486,BUS ZN,,0,,2
 13110,62061,Eastbound River Rd @ 8600 Blk,,49.152011,-122.985391,BUS ZN,,0,,1
-13111,62099,Eastbound E 49 Ave @ Ontario St,,49.225697,-123.106275,BUS ZN,,0,,1
-13112,52031,Westbound W 49 Ave @ Ontario St,,49.225848,-123.106842,BUS ZN,,0,,1
 13113,62004,Southbound 208 St @ 72 Ave,,49.132957,-122.646079,BUS ZN,,0,,1
 13114,62005,Northbound 208 St @ 72 Ave,,49.133858,-122.645811,BUS ZN,,0,,1
 13115,62118,Southbound Granville St @ W 16th Ave,,49.25737,-123.138944,BUS ZN,,0,,1
@@ -2178,6 +2175,8 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 13135,60558,Westbound W 41 Ave @ Blenheim St,,49.234843,-123.178062,BUS ZN,,0,,1
 13138,62042,Northbound West Blvd @ W 42 Ave,,49.233431,-123.155538,BUS ZN,,0,,2
 1314,51303,Southbound Knight St @ E 37 Ave,,49.236514,-123.07705,BUS ZN,,0,,1
+13140,62043,Westbound E 49th Ave @ Quebec St,,49.225771,-123.10345,BUS ZN,,0,,1
+13141,52034,Westbound W 49 Ave @ Cambie St,,49.226222,-123.117145,BUS ZN,,0,,1
 1315,51304,Southbound Knight St @ E 39 Ave,,49.234472,-123.077104,BUS ZN,,0,,2
 1316,51305,Southbound Knight St @ E 41 Ave,,49.232305,-123.077224,BUS ZN,,0,,1
 1317,51306,Southbound Knight St @ E 43 Ave,,49.230318,-123.077253,BUS ZN,,0,,2
@@ -2749,7 +2748,6 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 2042,52025,Westbound E 49 Ave @ St. Catherines St,,49.225497,-123.087115,BUS ZN,,0,,1
 2044,52027,Westbound E 49 Ave @ Fraser St,,49.225535,-123.091289,BUS ZN,,0,,1
 2046,52029,Westbound E 49 Ave @ Prince Edward St,,49.22566,-123.098055,BUS ZN,,0,,1
-2051,61218,Langara-49th Station @ Bay 2,,49.226178,-123.116035,BUS ZN,,0,,1
 2052,52035,Westbound W 49 Ave @ Tisdall St,,49.226392,-123.121435,BUS ZN,,0,,1
 2053,52036,Westbound W 49 Ave @ Laurel St,,49.226538,-123.125587,BUS ZN,,0,,1
 2054,52037,Westbound W 49 Ave @ Oak St,,49.226658,-123.128988,BUS ZN,,0,,1
@@ -3551,6 +3549,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 3065,53033,Westbound Lougheed Hwy @ Hastings St,,49.270604,-122.783366,BUS ZN,,0,,1
 3066,53034,Westbound Lougheed Hwy @ Westwood St,,49.274252,-122.791893,BUS ZN,,0,,1
 3067,53035,Coquitlam Central Station @ Bay 4,,49.275172,-122.798784,BUS ZN,,0,,1
+3068,53036,Westbound Dewdney Trunk Rd @ Lougheed Hwy,,49.269433,-122.799514,BUS ZN,,0,,1
 3069,53037,Westbound Dewdney Trunk Rd @ Norman Ave,,49.27171,-122.802424,BUS ZN,,0,,2
 307,50304,Northbound Dunbar St @ W 30 Ave,,49.245532,-123.185125,BUS ZN,,0,,1
 3070,53038,Westbound Mariner Way @ Dewdney Trunk Rd,,49.27277,-122.804988,BUS ZN,,0,,1
@@ -4671,6 +4670,7 @@ stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,locatio
 4468,54418,Eastbound Marine Dr @ Lloyd Ave,,49.32375,-123.105298,BUS ZN,,0,,1
 4469,54419,Southbound Chesterfield Ave @ W 3rd St,,49.314494,-123.080587,BUS ZN,,0,,1
 447,50443,Eastbound McGill St @ N Slocan St,,49.288617,-123.048823,BUS ZN,,0,,1
+4470,54420,Southbound Chesterfield Ave @ W 1st St,,49.31297,-123.082166,BUS ZN,,0,,1
 4471,54421,Lonsdale Quay @ Bay 1,,49.310597,-123.082918,BUS ZN,,0,,1
 4472,54422,Northbound Lillooet Rd @ Mt Seymour Parkway,,49.313087,-123.024687,BUS ZN,,0,,1
 4473,54423,Purcell Way @ Capilano University,,49.317678,-123.020749,BUS ZN,,0,,1
