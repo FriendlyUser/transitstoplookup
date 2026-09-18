@@ -1,7 +1,6 @@
 route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
 10232,TL,256,Whitby Estate/Park Royal/Spuraway,,3,https://translink.ca/schedules-and-maps/route/256/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=256,,
 11201,TL,033,16th & 33rd Avenue,,3,https://translink.ca/schedules-and-maps/route/33/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=33,,
-11202,TL,042,Alma/Spanish Banks,,3,https://translink.ca/schedules-and-maps/route/42/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=42,,
 11692,TL,364,64 Avenue,,3,https://translink.ca/schedules-and-maps/route/364/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=364,,
 11693,TL,388,88 Avenue,,3,https://translink.ca/schedules-and-maps/route/388/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=388,,
 11696,TL,609,South Delta Exchange/Ladner Exchange,,3,https://translink.ca/schedules-and-maps/route/609/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=609,,
@@ -27,7 +26,6 @@ route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_
 30039,TL,173,Coquitlam Central Station/Cedar,,3,https://translink.ca/schedules-and-maps/route/173/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=173,,
 30040,TL,174,Coquitlam Central Station/Rocklin,,3,https://translink.ca/schedules-and-maps/route/174/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=174,,
 30041,TL,175,Coquitlam Central Station/Meridian,,3,https://translink.ca/schedules-and-maps/route/175/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=175,,
-30042,TL,179,Coquitlam Central Station/Buntzen Lake,,3,https://translink.ca/schedules-and-maps/route/179/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=179,,
 30043,TL,180,Moody Centre Station/Lougheed Station,,3,https://translink.ca/schedules-and-maps/route/180/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=180,,
 30044,TL,181,Moody Centre Station/Ioco,,3,https://translink.ca/schedules-and-maps/route/181/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=181,,
 30045,TL,182,Moody Centre Station/Belcarra,,3,https://translink.ca/schedules-and-maps/route/182/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=182,,
@@ -65,9 +63,8 @@ route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_
 37808,TL,R1,King George Blvd,,3,https://translink.ca/schedules-and-maps/route/R1/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=R1,008522,FFFFFF
 37809,TL,R3,Lougheed Hwy,,3,https://translink.ca/schedules-and-maps/route/R3/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=R3,008522,FFFFFF
 37810,TL,R4,41st Avenue,,3,https://translink.ca/schedules-and-maps/route/R4/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=R4,008522,FFFFFF
-38311,TL,R2,Marine Drive,,3,https://translink.ca/schedules-and-maps/route/R2/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=R2,008522,FFFFFF
+38311,TL,R2,Marine-Willingdon,,3,https://translink.ca/schedules-and-maps/route/R2/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=R2,008522,FFFFFF
 39304,TL,031,Metrotown Station/River District,,3,https://translink.ca/schedules-and-maps/route/31/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=31,,
-39305,TL,222,Willingdon Express,,3,https://translink.ca/schedules-and-maps/route/222/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=222,,
 39307,TL,245,Phibbs Exchange/Capilano University,,3,https://translink.ca/schedules-and-maps/route/245/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=245,,
 40855,TL,350,White Rock Centre/Crescent Beach,,3,https://translink.ca/schedules-and-maps/route/350/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=350,,
 44845,TL,900,Bike Bus,,3,https://translink.ca/schedules-and-maps/route/900/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=900,,
@@ -75,8 +72,7 @@ route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_
 46099,TL,102,New West Station/Victoria  Hill,,3,https://translink.ca/schedules-and-maps/route/102/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=102,,
 46604,TL,R6,Scott Road,,3,https://translink.ca/schedules-and-maps/route/R6/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=R6,008522,FFFFFF
 48855,TL,338,East Fraser Heights/Guildford,,3,https://translink.ca/schedules-and-maps/route/338/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=338,,
-53126,TL,736,Haney Place/Golden Ears,,3,https://translink.ca/schedules-and-maps/route/736/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=736,,
-53127,TL,566,Campbell Valley/Langley Centre,,3,https://translink.ca/schedules-and-maps/route/566/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=566,,
+53893,TL,556,Langley Centre/Gloucester,,3,https://translink.ca/schedules-and-maps/route/556/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=556,,
 6612,TL,002,Macdonald,,3,https://translink.ca/schedules-and-maps/route/2/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=2,,
 6613,TL,003,Main,,3,https://translink.ca/schedules-and-maps/route/3/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=3,,
 6614,TL,004,Powell/UBC Exchange,,3,https://translink.ca/schedules-and-maps/route/4/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=4,,
@@ -237,7 +233,6 @@ route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_
 7224,TL,791,Haney Place/Braid Station,,3,https://translink.ca/schedules-and-maps/route/791/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=791,,
 7321,TL,375,152 Street,,3,https://translink.ca/schedules-and-maps/route/375/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=375,,
 7322,TL,132,Capitol Hill/Hastings @ Gilmore,,3,https://translink.ca/schedules-and-maps/route/132/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=132,,
-7509,TL,150,Coquitlam Central Station/White Pine Beach,,3,https://translink.ca/schedules-and-maps/route/150/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=150,,
 8286,TL,370,Cloverdale/Willowbrook,,3,https://translink.ca/schedules-and-maps/route/370/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=370,,
 8289,TL,865,Samuel Robertson School Special,,3,https://translink.ca/schedules-and-maps/route/865/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=865,,
 8290,TL,341,Guildford/Newton Exchange,,3,https://translink.ca/schedules-and-maps/route/341/direction/0/schedule?utm_source=referral&utm_medium=google+maps&utm_campaign=gtfs&utm_content=schedules_route&utm_term=341,,
